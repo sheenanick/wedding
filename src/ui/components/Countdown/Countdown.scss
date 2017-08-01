@@ -1,0 +1,25 @@
+.Countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 62px;
+  padding: 4px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 4px;
+}
+
+.number {
+  font-size: 36px;
+  margin: 12px 0 0 0;
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,58 @@
+@import "../../../util/theme";
+
+.Header {
+  height: 100vh;
+  background-image: url("../../../img/main.jpg");
+  background-size: cover;
+  color: $white;
+  position: relative;
+}
+
+.header-div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.header-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: $black;
+  }
+
+  a:link {
+    color: $black;
+  }
+}
+
+.title {
+  font-size: $font-size-title;
+  margin: 36px 0;
+}
+
+.subtitle {
+  font-size: $font-size-subtitle;
+  margin: 0;
+}
+
+.button {
+  border-radius: 32px;
+  background-color: $white;
+  border-style: none;
+  font-size: $button-text-size;
+  padding: 14px 42px;
+  margin: 56px 0;
+}
+
+.button:hover {
+  background-color: rgba(255,255,255,0.6);
+}

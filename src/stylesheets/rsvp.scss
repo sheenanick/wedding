@@ -1,0 +1,131 @@
+@import '../util/theme';
+
+$input-margin-top: 6px;
+$input-padding: 4px;
+$input-height: 42px;
+
+label{
+  font-size: $font-size-label;
+}
+
+input, textarea {
+  box-sizing: border-box;
+}
+
+.Rsvp {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  height: 300px;
+  width: 100%;
+  background-image: url('../img/rsvp.jpg');
+  background-size: cover;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  max-width: $app-max-width;
+  text-align: left;
+}
+
+.form-item {
+  width: 100%;
+  padding: 18px 0;
+}
+
+.form-box {
+  background-color: #FAFAFA;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: thin;
+}
+
+.error-box {
+  @extend .form-box;
+  border-color: red;
+}
+
+.errorMessage {
+  font-size: $font-size-label;
+  color: red;
+  margin: 4px 0;
+}
+
+.input {
+  width: 100%;
+  height: $input-height;
+  margin-top: $input-margin-top;
+  padding: $input-padding;
+  font-size: $font-size-label;
+}
+
+.name-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.name-field {
+  width: 49%;
+}
+
+.name {
+  width: 100%;
+  height: $input-height;
+  margin-top: $input-margin-top;
+  padding: $input-padding;
+  font-size: $font-size-label;
+}
+
+.radio label {
+  margin-right: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#message {
+  height: 100px;
+  width: 100%;
+  margin-top: $input-margin-top;
+  padding: $input-padding;
+  font-size: $font-size-label;
+}
+
+#submit-button {
+  height: $button-height;
+  width: 132px;
+  font-size: $button-text-size;
+  margin: 12px 0;
+  background-color: $black;
+  color: $white;
+  border-style: none;
+}
+
+#submit-button:hover {
+  background-color: rgba(0,0,0,0.6);
+}

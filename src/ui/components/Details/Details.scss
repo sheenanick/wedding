@@ -1,0 +1,28 @@
+@import "../../../util/theme";
+
+p {
+  font-size: $font-size-body;
+}
+
+.Details {
+  padding: 56px 32px;
+}
+
+.img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 580px;
+}
+
+.text {
+  margin: 16px 0;
+}
+
+.time {
+  margin: 18px 0 24px;
+  font-size: 18px;
+}
+
+.address p {
+  margin: 8px 0;
+}

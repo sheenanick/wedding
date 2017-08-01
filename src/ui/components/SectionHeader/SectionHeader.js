@@ -1,0 +1,17 @@
+import React, { Component } from 'react';
+import './SectionHeader.scss';
+
+class SectionHeader extends Component {
+  render() {
+    return (
+      <div className='SectionHeader' style={{backgroundImage: `url(${this.props.img})`}}>
+        <div className='overlay'>
+          <h1 className='header-title'>{this.props.title}</h1>
+          <h4>{this.props.subtitle}</h4>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default SectionHeader;
