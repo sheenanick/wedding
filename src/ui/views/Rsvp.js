@@ -32,18 +32,25 @@ class Rsvp extends Component {
   _handleSubmit(event) {
     console.log(this.state);
     event.preventDefault();
-    //show loading
+    //TODO show loading
     const { email, firstName, lastName } = this.state;
     const errors = {
-      emailError: email === '',
+      emailError: this._validateEmail(email),
       nameError: firstName === '' || lastName === '',
     }
     this.setState(errors);
-    //validate input
-    //if valid, upload to Firebase & change state to submitted
 
-    //hide loading
-    // this.setState({submitted: true});
+    const valid = Object.keys(errors).every((key) => { return !errors[key] });
+    if (valid) {
+      this.setState({ submitted: true });
+      //TODO if valid, upload to Firebase & hide loading
+    }
+
+  }
+
+  _validateEmail(email) {
+    const re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
+    return !re.test(email);
   }
 
   render() {
@@ -59,11 +66,11 @@ class Rsvp extends Component {
               <div className='form-item'>
                 {
                   this.state.emailError ?
-                  <p className='errorMessage'>Email Address is required</p>
+                  <p className='errorMessage'>Valid Email Address is required</p>
                   : null
                 }
                 <label>Email Address*</label>
-                <input className={this.state.emailError ? 'input form-box error-box' : 'input form-box'} name='email' type='text' value={this.state.email} onChange={this._handleChange} />
+                <input className={this.state.emailError ? 'input form-box error-box' : 'input form-box'} name='email' type='email' value={this.state.email} onChange={this._handleChange} />
               </div>
               <div className='form-item'>
                 {
