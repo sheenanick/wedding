@@ -1,0 +1,25 @@
+@import '../../../util/theme';
+
+.navbar {
+  display: none;
+  justify-content: space-between;
+  margin: 0 16px;
+  p {
+    font-size: 20px;
+  }
+}
+
+.navbar-items {
+  display: flex;
+  a {
+    margin-left: 32px;
+  }
+}
+
+#sheenatrong {
+  width: 100%;
+  height: $line-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

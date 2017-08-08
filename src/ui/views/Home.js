@@ -4,7 +4,7 @@ import { browserHistory } from 'react-router';
 import Header from '../components/Header/Header';
 import Details from '../components/Details/Details';
 import ceremonyPic from '../../img/ceremony.jpg';
-import { WEDDING_INFO } from '../../constants.js';
+import { WEDDING_INFO } from '../../weddingInfo.json';
 import '../../stylesheets/home.scss';
 
 export default class Home extends Component {
