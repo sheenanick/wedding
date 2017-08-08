@@ -24,8 +24,15 @@ module.exports = {
         loader: 'style-loader!css-loader!sass-loader?sourceMap'
       },
       {
-        test: /\.(png|jpg|)$/,
-        loader: 'url-loader?limit=200000'
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
       }
     ]
   },

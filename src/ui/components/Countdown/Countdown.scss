@@ -7,6 +7,17 @@
   }
 }
 
+.spinner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.spinner {
+  height: 44px;
+  width: 44px;
+}
+
 .column {
   width: 62px;
   height: 85px;
@@ -40,5 +51,9 @@
   }
   .number {
     font-size: 48px;
+  }
+  .spinner {
+    height: 58px;
+    width: 58px;
   }
 }

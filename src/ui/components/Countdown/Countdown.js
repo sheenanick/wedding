@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
+import spinner from '../../../img/spinner.gif';
 import './Countdown.scss';
 
 class Countdown extends Component {
@@ -55,48 +56,56 @@ class Countdown extends Component {
     return (
       <div className='Countdown'>
         <div className='column'>
-          {
-            this.state.loading ?
-            null
-            :
-            <div className='column-items'>
+          <div className='column-items'>
+            {
+              this.state.loading ?
+              <div className='spinner-container'>
+                <img className='spinner' src={spinner}/>
+              </div>
+              :
               <p className='number'>{this.state.days}</p>
-              <p className='label'>days</p>
-            </div>
-          }
+            }
+            <p className='label'>days</p>
+          </div>
         </div>
         <div className='column'>
-          {
-            this.state.loading ?
-            null
-            :
-            <div className='column-items'>
+          <div className='column-items'>
+            {
+              this.state.loading ?
+              <div className='spinner-container'>
+                <img className='spinner' src={spinner}/>
+              </div>
+              :
               <p className='number'>{this.state.hours}</p>
-              <p className='label'>hours</p>
-            </div>
-          }
+            }
+            <p className='label'>hours</p>
+          </div>
         </div>
         <div className='column'>
-          {
-            this.state.loading ?
-            null
-            :
-            <div className='column-items'>
+          <div className='column-items'>
+            {
+              this.state.loading ?
+              <div className='spinner-container'>
+                <img className='spinner' src={spinner}/>
+              </div>
+              :
               <p className='number'>{this.state.minutes}</p>
-              <p className='label'>minutes</p>
-            </div>
-          }
+            }
+            <p className='label'>minutes</p>
+          </div>
         </div>
         <div className='column'>
-          {
-            this.state.loading ?
-            null
-            :
-            <div className='column-items'>
+          <div className='column-items'>
+            {
+              this.state.loading ?
+              <div className='spinner-container'>
+                <img className='spinner' src={spinner}/>
+              </div>
+              :
               <p className='number'>{this.state.seconds}</p>
-              <p className='label'>seconds</p>
-            </div>
-          }
+            }
+            <p className='label'>seconds</p>
+          </div>
         </div>
       </div>
     );
