@@ -16,7 +16,7 @@ class Header extends Component {
                 FEB 17, 2018 | WHISTLER, B.C.
               </p>
               <button className='button'><a href='rsvp'>RSVP</a></button>
-              <Countdown date={this.props.date}/>
+              <Countdown date={this.props.date} loading={this.props.loading}/>
             </div>
           </div>
         </div>

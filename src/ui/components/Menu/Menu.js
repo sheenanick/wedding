@@ -3,10 +3,6 @@ import closeIcon from '../../../img/close-button.png';
 import './Menu.scss';
 
 export default class Menu extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className='Menu'>

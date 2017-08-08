@@ -3,10 +3,6 @@ import menuIcon from '../../../img/menu-button.png';
 import './Nav.scss';
 
 export default class Nav extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className='Nav'>
