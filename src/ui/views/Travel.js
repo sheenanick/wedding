@@ -4,6 +4,7 @@ import travelPic from '../../img/travel/travel.jpg';
 import stayPic from '../../img/travel/village.jpg';
 import doPic from '../../img/travel/snowmobile.jpg';
 import map from '../../img/travel/map.jpg';
+import '../../stylesheets/travel.scss';
 
 class Travel extends Component {
   render() {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import menuIcon from '../../img/menu-button.png';
 import closeIcon from '../../img/close-button.png';
+import '../../stylesheets/app.scss';
 
 export default class App extends Component {
   constructor(props) {
@@ -37,9 +38,7 @@ export default class App extends Component {
                 <div className='icon-container'>
                   <img className='icon' src={menuIcon} onClick={this._toggleMenu}/>
                 </div>
-                <div className='name-container'>
-                  <a href='/' id='sheenatrong'><p>Sheena & Trong</p></a>
-                </div>
+                <a href='/' id='sheenatrong'><p>Sheena & Trong</p></a>
               </div>
               <div className='navbar'>
                 <div>

@@ -3,8 +3,9 @@ import { browserHistory } from 'react-router';
 
 import Header from '../components/Header/Header';
 import Details from '../components/Details/Details';
-import { WEDDING_INFO } from '../../constants.js';
 import ceremonyPic from '../../img/ceremony.jpg';
+import { WEDDING_INFO } from '../../constants.js';
+import '../../stylesheets/home.scss';
 
 export default class Home extends Component {
   componentDidMount() {

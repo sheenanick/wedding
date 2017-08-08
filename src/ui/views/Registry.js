@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SectionHeader from '../components/SectionHeader/SectionHeader';
 import registryPic from '../../img/gifts.jpg';
+import '../../stylesheets/registry.scss';
 
 class Registry extends Component {
   render() {

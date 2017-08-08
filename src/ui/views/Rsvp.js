@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SectionHeader from '../components/SectionHeader/SectionHeader';
 import rsvpPic from '../../img/rsvp.jpg';
+import '../../stylesheets/rsvp.scss';
 
 class Rsvp extends Component {
   constructor(props) {
