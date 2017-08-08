@@ -10,6 +10,7 @@ class Countdown extends Component {
       hours: 0,
       minutes: 0,
       seconds: 0,
+      loading: true,
     };
   }
 
@@ -45,7 +46,8 @@ class Countdown extends Component {
       days,
       hours,
       minutes,
-      seconds
+      seconds,
+      loading: false
     });
   }
 
@@ -53,20 +55,48 @@ class Countdown extends Component {
     return (
       <div className='Countdown'>
         <div className='column'>
-          <p className='number'>{this.state.days}</p>
-          <p className='label'>days</p>
+          {
+            this.state.loading ?
+            null
+            :
+            <div className='column-items'>
+              <p className='number'>{this.state.days}</p>
+              <p className='label'>days</p>
+            </div>
+          }
         </div>
         <div className='column'>
-          <p className='number'>{this.state.hours}</p>
-          <p className='label'>hours</p>
+          {
+            this.state.loading ?
+            null
+            :
+            <div className='column-items'>
+              <p className='number'>{this.state.hours}</p>
+              <p className='label'>hours</p>
+            </div>
+          }
         </div>
         <div className='column'>
-          <p className='number'>{this.state.minutes}</p>
-          <p className='label'>minutes</p>
+          {
+            this.state.loading ?
+            null
+            :
+            <div className='column-items'>
+              <p className='number'>{this.state.minutes}</p>
+              <p className='label'>minutes</p>
+            </div>
+          }
         </div>
         <div className='column'>
-          <p className='number'>{this.state.seconds}</p>
-          <p className='label'>seconds</p>
+          {
+            this.state.loading ?
+            null
+            :
+            <div className='column-items'>
+              <p className='number'>{this.state.seconds}</p>
+              <p className='label'>seconds</p>
+            </div>
+          }
         </div>
       </div>
     );

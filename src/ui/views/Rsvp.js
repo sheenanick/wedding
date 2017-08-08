@@ -61,7 +61,7 @@ class Rsvp extends Component {
           this.state.submitted ?
           <h3 className='section'>Thank you for your RSVP!</h3>
           :
-          <div className='content'>
+          <div className='section'>
             <form className='form' onSubmit={this._handleSubmit}>
               <div className='form-item'>
                 {

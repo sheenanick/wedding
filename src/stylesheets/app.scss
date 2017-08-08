@@ -87,6 +87,7 @@
 }
 
 .section {
+  max-width: $app-max-width;
   padding: $app-padding;
   display: flex;
   flex-direction: column;
