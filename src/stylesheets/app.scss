@@ -35,10 +35,6 @@
   align-items: center;
 }
 
-.icon {
-  padding: 8px;
-}
-
 .navbar {
   display: none;
   justify-content: space-between;
@@ -99,7 +95,7 @@
 
 #sheenatrong {
   width: 100%;
-  height: 48px;
+  height: $line-height;
   display: flex;
   justify-content: center;
   align-items: center;
