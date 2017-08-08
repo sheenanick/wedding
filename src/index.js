@@ -5,6 +5,7 @@ import { Router, browserHistory } from 'react-router';
 import routes from './routes';
 
 require('./stylesheets/app.scss');
+require('./stylesheets/home.scss');
 require('./stylesheets/travel.scss');
 require('./stylesheets/registry.scss');
 require('./stylesheets/rsvp.scss');

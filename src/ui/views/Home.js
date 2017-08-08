@@ -14,6 +14,7 @@ export default class Home extends Component {
     return (
       <div id="home">
         <Header date={WEDDING_INFO.date} />
+        <h2 id='welcome-message'>Please join us as we celebrate our wedding on February 17th, 2018 in Whistler, British Columbia!</h2>
         <Details id='ceremony' details={WEDDING_INFO.ceremony} img={ceremonyPic} />
       </div>
     );

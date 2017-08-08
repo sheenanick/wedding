@@ -2,6 +2,23 @@
 
 .App {
   text-align: center;
+  a:visited {
+    color: $red;
+  }
+  a:link {
+    color: $red;
+  }
+  p, h1, h2, h3, h4, li, label {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+.accent {
+  color: $accent;
+}
+
+.cursive {
+  font-family: 'Parisienne', cursive;
 }
 
 .menu-div {
@@ -11,10 +28,28 @@
 
 .icon-container {
   text-align: left;
+  position: absolute;
+  z-index: 1;
 }
 
 .icon {
   padding: 8px;
+}
+
+.navbar {
+  display: none;
+  justify-content: space-between;
+  margin: 0 16px;
+  p {
+    font-size: 20px;
+  }
+}
+
+.navbar-items {
+  display: flex;
+  a {
+    margin-left: 32px;
+  }
 }
 
 .menu-items {
@@ -29,18 +64,28 @@
     line-height: $line-height;
     font-size: $font-size-title;
   }
+}
 
+.menu-div, .navbar, #mobile-menu {
   a {
     text-decoration: none;
   }
-
   a:visited {
     color: $black;
   }
-
   a:link {
     color: $black;
   }
+}
+
+.title {
+  font-size: $font-size-title;
+  margin: 36px 0;
+}
+
+.subtitle {
+  font-size: $font-size-subtitle;
+  margin: 0;
 }
 
 .section {
@@ -48,4 +93,48 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#sheenatrong {
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 760px) {
+  #mobile-menu {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+  }
+  .section {
+    h2 {
+      font-size: 36px;
+    }
+    h3 {
+      font-size: 28px;
+    }
+  }
+  .SectionHeader {
+    height: 660px;
+  }
+  .header-title {
+    font-size: 102px;
+  }
+  .header-subtitle {
+    font-size: 24px;
+  }
+  .directions-subtitle {
+    font-size: 22px;
+  }
+  .title {
+    font-size: 68px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
 }

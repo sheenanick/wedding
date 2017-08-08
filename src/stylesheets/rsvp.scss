@@ -46,8 +46,8 @@ input, textarea {
 
 .form {
   width: 100%;
-  max-width: $app-max-width;
   text-align: left;
+  padding: $app-padding;
 }
 
 .form-item {

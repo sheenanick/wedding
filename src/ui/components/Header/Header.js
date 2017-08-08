@@ -9,11 +9,11 @@ class Header extends Component {
         <div className='header-div'>
           <div className='header-content'>
             <div>
-              <p className='title'>
-                SHEENA & TRONG
-              </p>
+              <span className='title cursive'>
+                #WinterWondDoland
+              </span>
               <p className='subtitle'>
-                FEB 10, 2018 | WHISTLER, CANADA
+                FEB 17, 2018 | WHISTLER, B.C.
               </p>
               <button className='button'><a href='rsvp'>RSVP</a></button>
               <Countdown date={this.props.date}/>

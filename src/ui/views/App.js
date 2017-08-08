@@ -26,15 +26,31 @@ export default class App extends Component {
               </div>
               <div className='menu-items'>
                 <a href='/'><h1>Wedding</h1></a>
-                <a href='travel'><h1>Travel</h1></a>
+                <a href='travel'><h1>Location</h1></a>
                 <a href='registry'><h1>Registry</h1></a>
                 <a href='rsvp'><h1>RSVP</h1></a>
               </div>
             </div>
           :
             <div className='app-content'>
-              <div className='icon-container'>
-                <img className='icon' src={menuIcon} onClick={this._toggleMenu}/>
+              <div id='mobile-menu'>
+                <div className='icon-container'>
+                  <img className='icon' src={menuIcon} onClick={this._toggleMenu}/>
+                </div>
+                <div className='name-container'>
+                  <a href='/' id='sheenatrong'><p>Sheena & Trong</p></a>
+                </div>
+              </div>
+              <div className='navbar'>
+                <div>
+                  <a href='/'><p>Sheena & Trong</p></a>
+                </div>
+                <div className='navbar-items'>
+                  <a href='/'><p>WEDDING</p></a>
+                  <a href='travel'><p>LOCATION</p></a>
+                  <a href='registry'><p>REGISTRY</p></a>
+                  <a href='rsvp'><p>RSVP</p></a>
+                </div>
               </div>
               {this.props.children}
             </div>

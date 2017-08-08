@@ -18,9 +18,12 @@ p {
   margin: 16px 0;
 }
 
+.details-title {
+  font-size: $font-size-title;
+}
+
 .time {
   margin: 18px 0 24px;
-  font-size: 18px;
 }
 
 .address p {

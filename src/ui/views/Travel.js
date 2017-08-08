@@ -16,11 +16,11 @@ class Travel extends Component {
             <p>Located in the original Whistler now known as “Creekside”, Nita Lake Lodge is a 90-minute drive north of Vancouver.</p>
           </div>
           <div className='section'>
-            <h3 className='accentTitle'>BY AIR</h3>
+            <h3 className='accent'>BY AIR</h3>
             <p>The closest international airport is Vancouver International Airport (YVR), approximately 2 - 2.5 hours away by car. There are a variety of convenient transfer options available including coaches like <a href='http://www.pacificcoach.com/bus-vancouver-to-whistler/'>Pacific Coach</a>.</p>
           </div>
           <div className='section'>
-            <h3 className='accentTitle'>BY CAR</h3>
+            <h3 className='accent'>BY CAR</h3>
             <p className='directions-subtitle'>Driving Directions from Seattle</p>
             <ul>
               <li>Take Interstate 5 to the Canadian Border.</li>
@@ -58,10 +58,11 @@ class Travel extends Component {
         <div className='content'>
           <div className='section'>
             <p>There are 3 different areas of Whistler Blackcomb: Whistler Village, Upper Village, and Creekside.</p>
-            <p>We have rooms blocked off for wedding guests at Nita Lake Lodge, which is located in Creekside. There is a courtesy shuttle to Whistler Village available from the hotel. Mention the Do wedding when you book.</p>
+            <p>Nita Lake Lodge is located in Creekside and there is a courtesy shuttle to Whistler Village available from the hotel. Rooms are not blocked, but can be reserved with the group rate based on availability at time of booking.</p>
+            <p><em>*3 night minimum stay required*</em></p>
           </div>
           <div className='lodging'>
-            <p className='accentTitle'>NITA LAKE LODGE</p>
+            <p className='accent'>NITA LAKE LODGE</p>
             <p>2131 Lake Placid Road</p>
             <p>Whistler, British Columbia</p>
             <p>Canada V0N 1B2</p>

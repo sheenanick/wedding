@@ -1,6 +1,7 @@
 @import '../util/theme';
 
 ul {
+  width: 100%;
   text-align: left;
   padding-left: 18px;
   font-size: $font-size-body;
@@ -10,10 +11,14 @@ h4 {
   margin: 0;
 }
 
-.content {
+.Travel {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.content {
+  max-width: $app-max-width;
 }
 
 .directions-subtitle {

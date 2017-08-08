@@ -1,13 +1,13 @@
 export const WEDDING_INFO = {
-  date : '20180210 15:00:00',
+  date : '20180217 15:00:00',
   ceremony : {
     title: 'Ceremony',
-    startTime: '3:00 PM',
+    startTime: '3:30 PM',
     endTime: '4:00 PM',
     address: {
-      name: 'Nita Lake Lodge',
+      name: 'NITA LAKE LODGE',
       street: '2131 Lake Placid Road',
-      cityzip: 'Whistler, British Columbia, Canada',
+      cityzip: 'Whistler, B.C.',
       map: 'www.google.com',
     },
   },

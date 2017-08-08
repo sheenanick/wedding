@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SectionHeader from '../components/SectionHeader/SectionHeader';
-import travelPic from '../../img/travel/travel.jpg';
+import rsvpPic from '../../img/rsvp.jpg';
 
 class Rsvp extends Component {
   constructor(props) {
@@ -30,7 +30,6 @@ class Rsvp extends Component {
   }
 
   _handleSubmit(event) {
-    console.log(this.state);
     event.preventDefault();
     //TODO show loading
     const { email, firstName, lastName } = this.state;
@@ -56,10 +55,10 @@ class Rsvp extends Component {
   render() {
     return (
       <div className='Rsvp'>
-        <SectionHeader img={travelPic} title='RSVP' subtitle='Kindly respond by Jan 1, 2018' />
+        <SectionHeader img={rsvpPic} title='RSVP' subtitle='Kindly respond by Jan 1, 2018' />
         {
           this.state.submitted ?
-          <h3>Thank you for your RSVP!</h3>
+          <h3 className='section'>Thank you for your RSVP!</h3>
           :
           <div className='content'>
             <form className='form' onSubmit={this._handleSubmit}>
