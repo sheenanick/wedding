@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux'
+import { submitRsvp } from '../../actions/rsvpActions';
 import SectionHeader from '../components/SectionHeader/SectionHeader';
+import Spinner from '../components/Spinner/Spinner';
 import rsvpPic from '../../img/rsvp.jpg';
 import '../../stylesheets/rsvp.scss';
 
@@ -32,20 +35,27 @@ class Rsvp extends Component {
 
   _handleSubmit(event) {
     event.preventDefault();
-    //TODO show loading
-    const { email, firstName, lastName } = this.state;
+    //validate form inputs
+    const { email, firstName, lastName, attending, message } = this.state;
     const errors = {
       emailError: this._validateEmail(email),
       nameError: firstName === '' || lastName === '',
     }
     this.setState(errors);
 
+    //if no errors, dispatch action to save to firebase
     const valid = Object.keys(errors).every((key) => { return !errors[key] });
     if (valid) {
       this.setState({ submitted: true });
-      //TODO if valid, upload to Firebase & hide loading
+      const rsvp = {
+        email,
+        firstName,
+        lastName,
+        attending,
+        message
+      }
+      this.props.submitRsvp(rsvp);
     }
-
   }
 
   _validateEmail(email) {
@@ -61,7 +71,7 @@ class Rsvp extends Component {
           this.state.submitted ?
           <h3 className='section'>Thank you for your RSVP!</h3>
           :
-          <div className='section'>
+          <div id='formSection'>
             <form className='form' onSubmit={this._handleSubmit}>
               <div className='form-item'>
                 {
@@ -111,4 +121,16 @@ class Rsvp extends Component {
   }
 }
 
-export default Rsvp;
+const mapStateToProps = (state) => {
+  return {
+    loading: state.rsvpState.loading,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    submitRsvp: function() { dispatch(submitRsvp()); },
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Rsvp);

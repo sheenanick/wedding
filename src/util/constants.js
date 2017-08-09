@@ -2,6 +2,7 @@ export const ACTIONS = {
   TOGGLE_MENU: 'TOGGLE_MENU',
   COUNTDOWN: 'COUNTDOWN',
   LOADING: 'LOADING',
+  RSVP: 'RSVP'
 }
 
 export const MENU = {

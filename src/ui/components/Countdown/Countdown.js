@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
-import spinner from '../../../img/spinner.gif';
+import spinner from '../../../img/snowspinner.gif';
 import './Countdown.scss';
 
 class Countdown extends Component {
