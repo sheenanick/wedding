@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import closeIcon from '../../../img/close-button.png';
+import { MENU } from '../../../util/constants';
 import './Menu.scss';
 
 export default class Menu extends Component {
+  _renderItems() {
+    return (
+      Object.keys(MENU).map((key) => (
+        <Link to={MENU[key]['path']} onClick={this.props.toggleMenu} key={key}>
+          <h1>{MENU[key]['label']}</h1>
+        </Link>
+      ))
+    );
+  }
+
   render() {
     return (
       <div className='Menu'>
@@ -10,10 +22,7 @@ export default class Menu extends Component {
           <img className='icon' src={closeIcon} onClick={this.props.toggleMenu}/>
         </div>
         <div className='menu-items'>
-          <a href='/'><h1>Wedding</h1></a>
-          <a href='travel'><h1>Location</h1></a>
-          <a href='registry'><h1>Registry</h1></a>
-          <a href='rsvp'><h1>RSVP</h1></a>
+          {this._renderItems()}
         </div>
       </div>
     );

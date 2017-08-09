@@ -1,8 +1,28 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import menuIcon from '../../../img/menu-button.png';
+import { MENU } from '../../../util/constants';
 import './Nav.scss';
 
 export default class Nav extends Component {
+  _isActive(key) {
+    if (this.props.location.pathname === key) {
+      return 'active';
+    }
+  }
+
+  _renderItems() {
+    return (
+      Object.keys(MENU).map((key) => (
+        <Link to={MENU[key]['path']} key={key}>
+          <p className={this._isActive(MENU[key]['path'])}>
+            {MENU[key]['label']}
+          </p>
+        </Link>
+      ))
+    );
+  }
+
   render() {
     return (
       <div className='Nav'>
@@ -10,17 +30,14 @@ export default class Nav extends Component {
           <div className='icon-container'>
             <img className='icon' src={menuIcon} onClick={this.props.toggleMenu}/>
           </div>
-          <a href='/' id='sheenatrong'><p>Sheena & Trong</p></a>
+          <Link to='/' id='sheenatrong'><p>Sheena & Trong</p></Link>
         </div>
         <div className='navbar'>
           <div>
-            <a href='/'><p>Sheena & Trong</p></a>
+            <Link to='/'><p>Sheena & Trong</p></Link>
           </div>
           <div className='navbar-items'>
-            <a href='/'><p>WEDDING</p></a>
-            <a href='travel'><p>LOCATION</p></a>
-            <a href='registry'><p>REGISTRY</p></a>
-            <a href='rsvp'><p>RSVP</p></a>
+            {this._renderItems()}
           </div>
         </div>
       </div>

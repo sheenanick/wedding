@@ -29,7 +29,7 @@ class Home extends Component {
 const mapStateToProps = (state) => {
   return {
     date: state.countdownState.date,
-    loading: state.countdownState.loading
+    loading: state.countdownState.loading,
   }
 }
 

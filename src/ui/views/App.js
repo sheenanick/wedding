@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { toggleMenu } from '../../actions/navActions';
+import { toggleMenu, setActiveMenu } from '../../actions/navActions';
 import { countdown } from '../../actions/countdownActions';
 
 import Nav from '../components/Nav/Nav';
@@ -33,7 +33,7 @@ class App extends Component {
             <Menu toggleMenu={() => this._toggle()}/>
           :
             <div>
-              <Nav toggleMenu={() => this._toggle()}/>
+              <Nav location={this.props.location} toggleMenu={() => this._toggle()} activeMenu={this.props.activeMenu} onClick={() => this.props.setActiveMenu()}/>
               {this.props.children}
             </div>
         }
@@ -44,7 +44,8 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    showMenu: state.navState.showMenu
+    showMenu: state.navState.showMenu,
+    activeMenu: state.navState.activeMenu
   }
 }
 
@@ -52,6 +53,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     toggleMenu: function() { dispatch(toggleMenu()); },
     countdown: function() { dispatch(countdown()); },
+    setActiveMenu: function(activeMenu) { dispatch(setActiveMenu()); },
   }
 }
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import Countdown from '../Countdown/Countdown';
 import './Header.scss';
 
@@ -15,7 +16,7 @@ class Header extends Component {
               <p className='subtitle'>
                 FEB 17, 2018 | WHISTLER, B.C.
               </p>
-              <button className='button'><a href='rsvp'>RSVP</a></button>
+              <button className='button'><Link to='/rsvp'>RSVP</Link></button>
               <Countdown date={this.props.date} loading={this.props.loading}/>
             </div>
           </div>
