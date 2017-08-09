@@ -10,14 +10,14 @@ class Travel extends Component {
   render() {
     return (
       <div className='Travel'>
-        <SectionHeader img={travelPic} title='Travel' subtitle='Whistler, Canada' />
+        <SectionHeader img={travelPic} title='Travel' subtitle='Whistler, B.C., Canada' />
         <div className='section'>
           <h2>Directions</h2>
           <p>Located in the original Whistler now known as “Creekside”, Nita Lake Lodge is a 90-minute drive north of Vancouver.</p>
         </div>
         <div className='section'>
           <h3 className='accent'>BY AIR</h3>
-          <p>The closest international airport is Vancouver International Airport (YVR), approximately 2 - 2.5 hours away by car. There are a variety of convenient transfer options available including coaches like <a href='http://www.pacificcoach.com/bus-vancouver-to-whistler/'>Pacific Coach</a>.</p>
+          <p>The closest international airport is Vancouver International Airport (YVR), approximately 2 - 2.5 hours away by car. There are a variety of convenient transfer options available including <a href='http://www.pacificcoach.com/bus-vancouver-to-whistler/'>Pacific Coach</a>.</p>
         </div>
         <div className='section'>
           <h3 className='accent'>BY CAR</h3>
@@ -60,7 +60,7 @@ class Travel extends Component {
           <p><em>*3 night minimum stay required*</em></p>
         </div>
         <div className='lodging'>
-          <p className='accent'>NITA LAKE LODGE</p>
+          <a id='nita' href='http://www.nitalakelodge.com/'><p className='accent'>NITA LAKE LODGE</p></a>
           <p>2131 Lake Placid Road</p>
           <p>Whistler, British Columbia</p>
           <p>Canada V0N 1B2</p>

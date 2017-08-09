@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux'
 import { browserHistory } from 'react-router';
+import moment from 'moment';
 
 import Header from '../components/Header/Header';
 import Details from '../components/Details/Details';
@@ -18,7 +19,7 @@ class Home extends Component {
       <div id="home">
         <Header date={this.props.date} loading={this.props.loading}/>
         <div className='content'>
-          <h2 id='welcome-message'>Please join us as we celebrate our wedding on February 17th, 2018 in Whistler, British Columbia!</h2>
+          <h2 id='welcome-message'>Please join us as we celebrate our wedding on {moment(WEDDING_INFO.date).format('MMMM Do, YYYY')} in Whistler, British Columbia!</h2>
           <Details id='ceremony' details={WEDDING_INFO.ceremony} img={ceremonyPic} />
         </div>
       </div>
