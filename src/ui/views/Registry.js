@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SectionHeader from '../components/SectionHeader/SectionHeader';
 import registryPic from '../../img/gifts.jpg';
+import amazonLogo from '../../img/amazon.png';
 import '../../stylesheets/registry.scss';
 
 class Registry extends Component {
@@ -10,8 +11,9 @@ class Registry extends Component {
         <SectionHeader img={registryPic} title='Registry' subtitle='' />
         <div className='section'>
           <p>
-            We don't need you to bring us gifts – we know plane tickets are expensive and your presence at the wedding is enough! If you really want to give us something, a contribution to our honeymoon fund would be awesome.
+            We don't need you to bring us gifts – we know plane tickets are expensive and your presence at the wedding is enough! If you really want to give us something, a contribution to our honeymoon fund would be awesome. Or there's Amazon.
           </p>
+          <a href='https://www.amazon.com/wedding/share/trongandsheena' target='_blank'><img src={amazonLogo} alt='Amazon Logo' /></a>
         </div>
       </div>
     );
