@@ -1,12 +1,11 @@
 import { ACTIONS } from '../util/constants';
 
-export function submitRsvp() {
+export function submitRsvp(rsvp) {
   loading();
-  //TODO save to firebase, then:
+  firebase.database().ref('rsvp').push(rsvp);
   return {
     type: ACTIONS.RSVP
   }
-
 }
 
 function loading() {

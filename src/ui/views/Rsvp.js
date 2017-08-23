@@ -13,7 +13,7 @@ class Rsvp extends Component {
       email: '',
       firstName: '',
       lastName: '',
-      attending: true,
+      attending: 'true',
       message: '',
       submitted: false,
       emailError: false,
@@ -27,7 +27,6 @@ class Rsvp extends Component {
   _handleChange(event) {
     const target = event.target;
     const { value, name } = target;
-
     this.setState({
       [name]: value
     });
@@ -101,9 +100,9 @@ class Rsvp extends Component {
               </div>
               <div className='radio form-item'>
                 <label>Will you be attending?*</label>
-                <input name='attending' type='radio' value={true} checked={this.state.attending} onChange={this._handleChange} />
+                <input name='attending' type='radio' value='true' checked={this.state.attending === 'true'} onChange={this._handleChange} />
                 <label>Yes</label>
-                <input name='attending' type='radio' value={false} onChange={this._handleChange} />
+                <input name='attending' type='radio' value='false' checked={this.state.attending === 'false'}  onChange={this._handleChange} />
                 <label>No</label>
               </div>
               <div className='message-container form-item'>
@@ -129,7 +128,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    submitRsvp: function() { dispatch(submitRsvp()); },
+    submitRsvp: function(rsvp) { dispatch(submitRsvp(rsvp)); },
   }
 }
 
