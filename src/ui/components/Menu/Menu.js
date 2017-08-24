@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import closeIcon from '../../../img/close-button.png';
+import closeIcon from '../../../img/icons/close-button.png';
 import { MENU } from '../../../util/constants';
 import './Menu.scss';
 

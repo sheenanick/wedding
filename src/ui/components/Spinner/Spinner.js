@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import spinner from '../../../img/snowspinner.gif';
+import spinner from '../../../img/icons/snowspinner.gif';
 import './Spinner.scss';
 
 class Spinner extends Component {

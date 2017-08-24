@@ -33,7 +33,11 @@ module.exports = {
             }
           }
         ]
-      }
+      },
+      {
+		    test: /\.(ogg|m4a|mp3|wav|mpe?g)$/i,
+		    use: 'file-loader'
+			}
     ]
   },
   resolve: {

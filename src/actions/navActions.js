@@ -5,3 +5,9 @@ export function toggleMenu() {
     type: ACTIONS.TOGGLE_MENU,
   }
 }
+
+export function toggleAudio() {
+  return {
+    type: ACTIONS.TOGGLE_AUDIO,
+  }
+}

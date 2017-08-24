@@ -29,10 +29,26 @@
   color: $accent;
 }
 
+#mobile-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
 #sheenatrong {
   width: 100%;
   height: $line-height;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+#mobile-audio {
+  display: flex;
+  align-items: center;
+}
+
+#audio {
+  width: 24px;
+  display: flex;
   align-items: center;
 }
