@@ -1,9 +1,9 @@
 export const WEDDING_INFO = {
-  "date" : "2018-01-27 15:00:00",
+  "date" : "2018-02-17 16:00:00",
   "ceremony" : {
     "title": "Ceremony",
-    "startTime": "3:30 PM",
-    "endTime": "4:00 PM",
+    "startTime": "4:00 PM",
+    "endTime": "4:30 PM",
     "address": {
       "name": "NITA LAKE LODGE",
       "street": "2131 Lake Placid Road",
@@ -15,17 +15,6 @@ export const WEDDING_INFO = {
     "title": "Reception",
     "startTime": "5:00 PM",
     "endTime": "8:00 PM",
-    "address": {
-      "name": "Cathedral Park",
-      "street": "123 SE Main St",
-      "cityzip": "Portland, OR 97205",
-      "map": "www.google.com",
-    }
-  },
-  "afterparty" : {
-    "title": "Afterparty",
-    "startTime": "9:00 PM",
-    "endTime": "2:00 AM",
     "address": {
       "name": "Cathedral Park",
       "street": "123 SE Main St",
