@@ -36,7 +36,7 @@ export default class Nav extends Component {
     return (
       <div className='Nav'>
         <div id='mobile-menu'>
-          <div className='icon-container'>
+          <div>
             <img className='icon'
               src={menuIcon}
               onClick={this.props.toggleMenu}
