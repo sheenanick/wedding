@@ -65,56 +65,59 @@ class Rsvp extends Component {
   render() {
     return (
       <div className='Rsvp'>
-        <SectionHeader img={rsvpPic} title='RSVP' subtitle='Kindly respond by Jan 1, 2018' />
-        {
-          this.state.submitted ?
-          <h3 className='section'>Thank you for your RSVP!</h3>
-          :
-          <div id='formSection'>
-            <form className='form' onSubmit={this._handleSubmit}>
-              <div className='form-item'>
-                {
-                  this.state.emailError ?
-                  <p className='errorMessage'>Valid Email Address is required</p>
-                  : null
-                }
-                <label>Email Address*</label>
-                <input className={this.state.emailError ? 'input form-box error-box' : 'input form-box'} name='email' type='email' value={this.state.email} onChange={this._handleChange} />
-              </div>
-              <div className='form-item'>
-                {
-                  this.state.nameError ?
-                  <p className='errorMessage'>Name is required</p>
-                  : null
-                }
-                <div className='name-container'>
-                  <div className='name-field'>
-                    <label>First Name*</label>
-                    <input className={this.state.nameError ? 'name error-box' : 'name form-box'} name='firstName' type='text' value={this.state.firstName} onChange={this._handleChange} />
-                  </div>
-                  <div className='name-field'>
-                    <label>Last Name*</label>
-                    <input className={this.state.nameError ? 'name error-box' : 'name form-box'} name='lastName' type='text' value={this.state.lastName} onChange={this._handleChange} />
+        <SectionHeader img={rsvpPic} title='RSVP'/>
+        <div className='content'>
+          {
+            this.state.submitted ?
+            <h3 className='section'>Thank you for your RSVP!</h3>
+            :
+            <div id='formSection'>
+              <h3>KINDLY RESPOND BY JAN 1, 2018</h3>
+              <form className='form' onSubmit={this._handleSubmit}>
+                <div className='form-item'>
+                  {
+                    this.state.emailError ?
+                    <p className='errorMessage'>Valid Email Address is required</p>
+                    : null
+                  }
+                  <label>Email Address*</label>
+                  <input className={this.state.emailError ? 'input form-box error-box' : 'input form-box'} name='email' type='email' value={this.state.email} onChange={this._handleChange} />
+                </div>
+                <div className='form-item'>
+                  {
+                    this.state.nameError ?
+                    <p className='errorMessage'>Name is required</p>
+                    : null
+                  }
+                  <div className='name-container'>
+                    <div className='name-field'>
+                      <label>First Name*</label>
+                      <input className={this.state.nameError ? 'name error-box' : 'name form-box'} name='firstName' type='text' value={this.state.firstName} onChange={this._handleChange} />
+                    </div>
+                    <div className='name-field'>
+                      <label>Last Name*</label>
+                      <input className={this.state.nameError ? 'name error-box' : 'name form-box'} name='lastName' type='text' value={this.state.lastName} onChange={this._handleChange} />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className='radio form-item'>
-                <label>Will you be attending?*</label>
-                <input name='attending' type='radio' value='true' checked={this.state.attending === 'true'} onChange={this._handleChange} />
-                <label>Yes</label>
-                <input name='attending' type='radio' value='false' checked={this.state.attending === 'false'}  onChange={this._handleChange} />
-                <label>No</label>
-              </div>
-              <div className='message-container form-item'>
-                <label>Message</label>
-                <textarea className='form-box' id='message' name='message' type='text' value={this.state.message} onChange={this._handleChange} />
-              </div>
-              <div className='button-container'>
-                <button id='submit-button' type='submit' value='submit'>SUBMIT</button>
-              </div>
-            </form>
-          </div>
-        }
+                <div className='radio form-item'>
+                  <label>Will you be attending?*</label>
+                  <input name='attending' type='radio' value='true' checked={this.state.attending === 'true'} onChange={this._handleChange} />
+                  <label>Yes</label>
+                  <input name='attending' type='radio' value='false' checked={this.state.attending === 'false'}  onChange={this._handleChange} />
+                  <label>No</label>
+                </div>
+                <div className='message-container form-item'>
+                  <label>Message</label>
+                  <textarea className='form-box' id='message' name='message' type='text' value={this.state.message} onChange={this._handleChange} />
+                </div>
+                <div className='button-container'>
+                  <button id='submit-button' type='submit' value='submit'>SUBMIT</button>
+                </div>
+              </form>
+            </div>
+          }
+        </div>
       </div>
     );
   }

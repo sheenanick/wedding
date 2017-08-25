@@ -18,30 +18,8 @@ input, textarea {
   flex-direction: column;
 }
 
-.header {
-  height: 300px;
-  width: 100%;
-  background-image: url('../img/rsvp.jpg');
-  background-size: cover;
-}
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  background: rgba(0,0,0,0.45);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-
 .content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: $section-padding 0;
 }
 
 .form {

@@ -14,4 +14,8 @@ class SectionHeader extends Component {
   }
 }
 
+SectionHeader.defaultProps = {
+  subtitle: '',
+};
+
 export default SectionHeader;

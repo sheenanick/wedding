@@ -1,28 +1,25 @@
 @import '../util/theme';
 
-ul {
-  width: 100%;
-  text-align: left;
-  padding-left: 18px;
-  font-size: $font-size-body;
-}
-
-h4 {
-  margin: 0;
-}
-
 .Travel {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.directions-subtitle {
-  font-weight: 700;
+.travel-icons {
+  margin: 20px;
 }
 
 .lodging p {
   margin: 8px;
+}
+
+#car {
+  width: 58px;
+}
+
+#plane {
+  width: 48px;
 }
 
 #nita {
@@ -31,7 +28,7 @@ h4 {
 
 #map {
   width: 100%;
-  margin-top: $app-padding;
+  margin: $app-padding 0;
 }
 
 #options {

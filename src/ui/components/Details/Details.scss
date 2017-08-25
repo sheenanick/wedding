@@ -5,7 +5,7 @@ p {
 }
 
 .Details {
-  padding: 56px 32px;
+  padding: 32px;
 }
 
 .img {
@@ -18,12 +18,11 @@ p {
   margin: 16px 0;
 }
 
-.details-title {
-  font-size: $font-size-title;
-}
-
 .time {
   margin: 18px 0 24px;
+  h3 {
+    margin: 0;
+  }
 }
 
 .address p {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import moment from 'moment';
 import Countdown from '../Countdown/Countdown';
 import { WEDDING_INFO } from '../../../weddingInfo.json';
 import './Header.scss';
@@ -16,7 +15,7 @@ class Header extends Component {
                 #WinterWondDoland
               </span>
               <p className='subtitle'>
-                {moment(WEDDING_INFO.date).format('MMM D, YYYY').toUpperCase()} | {WEDDING_INFO.ceremony.address.cityzip.toUpperCase()}
+                {WEDDING_INFO.ceremony.address.cityzip.toUpperCase()} | CANADA
               </p>
               <button className='button'><Link to='/rsvp'>RSVP</Link></button>
               <Countdown date={this.props.date} loading={this.props.loading}/>

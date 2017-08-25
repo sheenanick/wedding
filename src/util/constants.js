@@ -13,7 +13,7 @@ export const MENU = {
   },
   TRAVEL: {
     path: '/travel',
-    label: 'LOCATION',
+    label: 'TRAVEL',
   },
   REGISTRY: {
     path: '/registry',
