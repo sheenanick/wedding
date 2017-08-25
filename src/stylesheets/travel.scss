@@ -16,10 +16,12 @@
 
 #car {
   width: 58px;
+  height: 58px;
 }
 
 #plane {
   width: 48px;
+  height: 58px;
 }
 
 #nita {
@@ -33,4 +35,13 @@
 
 #options {
   margin-bottom: $app-padding * 2;
+}
+
+@media only screen and (min-width: 760px) {
+  .directions-container {
+    display: flex;
+  }
+  .directions-section {
+    width: 50%;
+  }
 }

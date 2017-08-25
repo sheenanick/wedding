@@ -15,13 +15,15 @@ class Travel extends Component {
         <SectionHeader img={travelPic} title='TRAVEL'/>
         <div className='content'>
           <h2>Directions</h2>
-          <div className='section'>
-            <img src={car} id='car' className='travel-icons'/>
-            <p>Located in the original Whistler now known as “Creekside”, Nita Lake Lodge is a 90-minute drive north of Vancouver.</p>
-          </div>
-          <div className='section'>
-            <img src={plane} id='plane' className='travel-icons'/>
-            <p>The closest international airport is Vancouver International Airport (YVR), approximately 2 - 2.5 hours away by car. There are a variety of convenient transfer options available, such as <a href='http://www.pacificcoach.com/bus-vancouver-to-whistler/'>Pacific Coach</a>.</p>
+          <div className='directions-container'>
+            <div className='section directions-section'>
+              <img src={car} id='car' className='travel-icons'/>
+              <p>Located in the original Whistler now known as “Creekside”, Nita Lake Lodge is a 90-minute drive north of Vancouver, or 4-hour drive from Seattle.</p>
+            </div>
+            <div className='section directions-section'>
+              <img src={plane} id='plane' className='travel-icons'/>
+              <p>Vancouver International Airport (YVR) is approximately 2 - 2.5 hours away by car. There are many buses and shuttles from YVR -> Whistler.</p>
+            </div>
           </div>
         </div>
         <SectionHeader img={stayPic} title='WHERE TO STAY'/>
