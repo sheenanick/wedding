@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SectionHeader from '../components/SectionHeader/SectionHeader';
+import ScrollTop from '../components/ScrollTop/ScrollTop';
 import travelPic from '../../img/travel/travel.jpg';
 import stayPic from '../../img/travel/village.jpg';
 import doPic from '../../img/travel/snowmobile.jpg';
@@ -12,7 +13,7 @@ class Travel extends Component {
   render() {
     return (
       <div className='Travel'>
-        <SectionHeader img={travelPic} title='TRAVEL'/>
+        <SectionHeader id='travel-header' img={travelPic} title='TRAVEL'/>
         <div className='content'>
           <h2>Directions</h2>
           <div className='directions-container'>
@@ -50,6 +51,7 @@ class Travel extends Component {
         <div className='content'>
           <p className='section'><em>More info coming soon... !</em></p>
         </div>
+        <ScrollTop />
       </div>
     );
   }
