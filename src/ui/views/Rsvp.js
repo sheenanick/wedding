@@ -112,7 +112,7 @@ class Rsvp extends Component {
                   <textarea className='form-box' id='message' name='message' type='text' value={this.state.message} onChange={this._handleChange} />
                 </div>
                 <div className='button-container'>
-                  <button id='submit-button' type='submit' value='submit'>SUBMIT</button>
+                  <button id='submit-button' className='black-button' type='submit' value='submit'>SUBMIT</button>
                 </div>
               </form>
             </div>

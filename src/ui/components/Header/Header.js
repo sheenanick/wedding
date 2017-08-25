@@ -11,13 +11,13 @@ class Header extends Component {
         <div className='header-div'>
           <div className='header-content'>
             <div>
-              <span className='title cursive'>
+              <span className='header-title cursive'>
                 #WinterWondDoland
               </span>
               <p className='subtitle'>
                 {WEDDING_INFO.ceremony.address.cityzip.toUpperCase()} | CANADA
               </p>
-              <button className='button'><Link to='/rsvp'>RSVP</Link></button>
+              <button className='button rsvp-button'><Link to='/rsvp'>RSVP</Link></button>
               <Countdown date={this.props.date} loading={this.props.loading}/>
             </div>
           </div>

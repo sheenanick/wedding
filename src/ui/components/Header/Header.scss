@@ -35,16 +35,23 @@
   }
 }
 
-.button {
+.header-title {
+  font-size: $font-size-title;
+}
+
+.rsvp-button {
   border-radius: 32px;
-  background-color: $white;
   border-style: none;
-  font-size: $button-text-size;
-  padding: 14px 42px;
   margin: 56px 0;
-  font-family: 'Montserrat', sans-serif;
+  padding: 14px 42px;
 }
 
 .button:hover {
   background-color: rgba(255,255,255,0.6);
+}
+
+@media only screen and (min-width: 760px) {
+  .header-title {
+    font-size: 70px;
+  }
 }

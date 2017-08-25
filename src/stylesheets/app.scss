@@ -67,6 +67,20 @@
   padding: $section-padding $app-padding;
 }
 
+.button {
+  background-color: $white;
+  font-size: $button-text-size;
+}
+
+.black-button {
+  height: $button-height;
+  width: 132px;
+  font-size: $button-text-size;
+  background-color: $black;
+  color: $white;
+  border-style: none;
+}
+
 @media only screen and (min-width: 760px) {
   #mobile-menu {
     display: none;
@@ -79,16 +93,13 @@
       font-size: 32px;
     }
   }
-  .header-title {
-    font-size: 102px;
-  }
-  .header-subtitle {
-    font-size: 24px;
-  }
   .title {
     font-size: 76px;
     font-weight: normal;
     letter-spacing: 8px;
     word-spacing: 22px;
+  }
+  .subtitle {
+    font-size: 28px;
   }
 }

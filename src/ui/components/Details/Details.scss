@@ -2,6 +2,7 @@
 
 p {
   font-size: $font-size-body;
+  margin: 8px 0;
 }
 
 .Details {
@@ -14,10 +15,6 @@ p {
   max-width: 580px;
 }
 
-.text {
-  margin: 16px 0;
-}
-
 .time {
   margin: 18px 0 24px;
   h3 {
@@ -25,6 +22,17 @@ p {
   }
 }
 
-.address p {
-  margin: 8px 0;
+.map-button {
+  border-color: black;
+  padding: 16px;
+  margin: 32px 0 16px 0;
+  a {
+    text-decoration: none;
+  }
+  a:visited {
+    color: $black;
+  }
+  a:link {
+    color: $black;
+  }
 }
