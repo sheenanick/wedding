@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from 'react-redux'
 import { submitRsvp } from '../../actions/rsvpActions';
 import SectionHeader from '../components/SectionHeader/SectionHeader';
-import Spinner from '../components/Spinner/Spinner';
 import rsvpPic from '../../img/rsvp.jpg';
 import '../../stylesheets/rsvp.scss';
 
@@ -72,7 +71,7 @@ class Rsvp extends Component {
             <h3 className='section'>Thank you for your RSVP!</h3>
             :
             <div id='formSection'>
-              <h3>KINDLY RESPOND BY JAN 1, 2018</h3>
+              <h4>KINDLY RESPOND BY JAN 1, 2018</h4>
               <form className='form' onSubmit={this._handleSubmit}>
                 <div className='form-item'>
                   {
