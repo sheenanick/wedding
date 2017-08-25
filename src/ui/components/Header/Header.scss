@@ -1,9 +1,10 @@
 @import "../../../util/theme";
 
 .Header {
-  height: 100vh;
+  height: 90vh;
   background-image: url("../../../img/path.jpg");
   background-size: cover;
+  background-position: 50% 65%;
   color: $white;
   position: relative;
 }
