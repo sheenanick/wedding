@@ -18,12 +18,8 @@ input, textarea {
   flex-direction: column;
 }
 
-.content {
-  padding: $section-padding 0;
-}
-
 .form {
-  width: 94%;
+  width: 100%;
   max-width: $app-max-width;
   padding: $app-padding 0;
   text-align: left;
