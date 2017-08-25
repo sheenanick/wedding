@@ -45,7 +45,7 @@ export default class Nav extends Component {
           <div>
             <Link to='/' id='sheenatrong'><p>Sheena & Trong</p></Link>
           </div>
-          <div id='mobile-audio'>
+          <div id='mobile-audio' className='icon'>
             <img
               src={this.props.play ? audioIcon : muteIcon}
               onClick={this.props.toggleAudio}
