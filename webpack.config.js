@@ -1,4 +1,5 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 var webpack = require('webpack');
 
 module.exports = {
@@ -44,7 +45,15 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   plugins: [
-    new ExtractTextPlugin({ filename: 'app.css', allChunks: true })
+    new ExtractTextPlugin({ filename: 'app.css', allChunks: true }),
+    new CopyWebpackPlugin([
+      {
+        transform: function(content, path) {
+          return content.toString().replace("AIzaSyDq0JMwwWJrPM56s6RvEgNILa6KzO4WjtE", "AIzaSyBYoZ5RrEsZVY_LqzWPkg-XZfxdsrlLhk0");
+        },
+        from: './index.html'
+      }
+    ])
   ],
   devServer: {
     historyApiFallback: true,
