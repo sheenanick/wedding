@@ -49,7 +49,7 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         transform: function(content, path) {
-          return content.toString().replace("AIzaSyDq0JMwwWJrPM56s6RvEgNILa6KzO4WjtE", "AIzaSyBYoZ5RrEsZVY_LqzWPkg-XZfxdsrlLhk0");
+          return content.toString().replace("AIzaSyDsp1nMUwk7Q_9OJ5P-gBADkoVPgDZ4vvE", "AIzaSyCdR5ueh6h6GoszbaJBk1iwY4caFsKjqbY");
         },
         from: './index.html'
       }
