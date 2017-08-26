@@ -37,7 +37,7 @@ export default class Nav extends Component {
       <div className='Nav'>
         <div id='mobile-menu'>
           <div>
-            <img className='icon'
+            <img className='icon menu-icon'
               src={menuIcon}
               onClick={this.props.toggleMenu}
             />
@@ -47,6 +47,7 @@ export default class Nav extends Component {
           </div>
           <div id='mobile-audio' className='icon'>
             <img
+              className='audio-icon'
               src={this.props.play ? audioIcon : muteIcon}
               onClick={this.props.toggleAudio}
             />
@@ -59,6 +60,7 @@ export default class Nav extends Component {
           <div className='navbar-items'>
             <div id='audio'>
               <img
+                className='audio-icon'
                 src={this.props.play ? audioIcon : muteIcon}
                 onClick={this.props.toggleAudio}
               />

@@ -19,7 +19,7 @@ export default class Menu extends Component {
     return (
       <div className='Menu'>
         <div className='icon-container'>
-          <img className='icon' src={closeIcon} onClick={this.props.toggleMenu}/>
+          <img className='icon menu-icon' src={closeIcon} onClick={this.props.toggleMenu}/>
         </div>
         <div className='menu-items'>
           {this._renderItems()}
