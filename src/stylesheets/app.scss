@@ -23,14 +23,8 @@
   font-family: 'Parisienne', cursive;
 }
 
-.icon-container {
-  text-align: left;
-  position: absolute;
-  z-index: 1;
-}
-
 .icon {
-  margin: 8px $app-padding;
+  margin: $app-padding;
 }
 
 .Menu, .navbar, #mobile-menu {
@@ -46,7 +40,8 @@
 }
 
 .menu-icon {
-  width: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .title {
@@ -83,6 +78,11 @@
   background-color: $black;
   color: $white;
   border-style: none;
+}
+
+.center-vertical {
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (min-width: 760px) {

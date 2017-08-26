@@ -36,16 +36,16 @@ export default class Nav extends Component {
     return (
       <div className='Nav'>
         <div id='mobile-menu'>
-          <div>
-            <img className='icon menu-icon'
+          <div className='icon center-vertical'>
+            <img className='menu-icon'
               src={menuIcon}
               onClick={this.props.toggleMenu}
             />
           </div>
-          <div>
+          <div className='center-vertical'>
             <Link to='/' id='sheenatrong'><p>Sheena & Trong</p></Link>
           </div>
-          <div id='mobile-audio' className='icon'>
+          <div className='icon center-vertical'>
             <img
               className='audio-icon'
               src={this.props.play ? audioIcon : muteIcon}
