@@ -25,7 +25,10 @@ export default class Nav extends Component {
   renderItems() {
     return (
       Object.keys(MENU).map((key) => (
-        <Link className={this.isActive(MENU[key]['path'])} to={MENU[key]['path']} key={key}>
+        <Link
+          className={this.isActive(MENU[key]['path'])}
+          to={MENU[key]['path']}
+          key={key}>
           <p>{MENU[key]['label']}</p>
         </Link>
       ))
@@ -43,7 +46,9 @@ export default class Nav extends Component {
             />
           </div>
           <div className='center-vertical'>
-            <Link to='/' id='sheenatrong'><p>Sheena & Trong</p></Link>
+            <Link to='/' id='sheenatrong'>
+              <p>Sheena & Trong</p>
+            </Link>
           </div>
           <div>
             <img className='icon audio-icon'
@@ -54,7 +59,9 @@ export default class Nav extends Component {
         </div>
         <div className='navbar'>
           <div className='center-vertical'>
-            <Link to='/'><p>Sheena & Trong</p></Link>
+            <Link to='/'>
+              <p>Sheena & Trong</p>
+            </Link>
           </div>
           <div className='navbar-items'>
             <div id='audio'>
