@@ -4,9 +4,6 @@
   p {
     font-size: 16px;
   }
-  p:hover {
-    opacity: 0.7;
-  }
   img:hover {
     cursor: pointer;
   }
@@ -30,8 +27,19 @@
   }
 }
 
+.inactive {
+  p {
+    color: $gray;
+  }
+  p:hover {
+    color: $dark-gray;
+  }
+}
+
 .active {
-  color: $accent;
+  p {
+    color: $black;
+  }
 }
 
 #mobile-menu {
