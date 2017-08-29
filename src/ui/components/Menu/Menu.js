@@ -5,7 +5,7 @@ import { MENU } from '../../../util/constants';
 import './Menu.scss';
 
 export default class Menu extends Component {
-  _renderItems() {
+  renderItems() {
     return (
       Object.keys(MENU).map((key) => (
         <Link to={MENU[key]['path']} onClick={this.props.toggleMenu} key={key}>
@@ -22,7 +22,7 @@ export default class Menu extends Component {
           <img className='icon menu-icon' src={closeIcon} onClick={this.props.toggleMenu}/>
         </div>
         <div className='menu-items'>
-          {this._renderItems()}
+          {this.renderItems()}
         </div>
       </div>
     );

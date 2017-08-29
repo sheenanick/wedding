@@ -19,11 +19,11 @@ class App extends Component {
     clearInterval(this.timerID);
   }
 
-  _toggle() {
+  toggle() {
     this.props.toggleMenu();
   }
 
-  _toggleAudio() {
+  toggleAudio() {
     this.props.toggleAudio();
   }
 
@@ -33,15 +33,15 @@ class App extends Component {
         <audio id='bgm' src={LoveSong} autoPlay muted={!this.props.play} loop />
         {
           this.props.showMenu ?
-            <Menu toggleMenu={() => this._toggle()}/>
+            <Menu toggleMenu={() => this.toggle()}/>
           :
             <div>
               <Nav
                 location={this.props.location}
                 activeMenu={this.props.activeMenu}
                 play={this.props.play}
-                toggleMenu={() => this._toggle()}
-                toggleAudio={() => this._toggleAudio()}
+                toggleMenu={() => this.toggle()}
+                toggleAudio={() => this.toggleAudio()}
                 onClick={() => this.props.setActiveMenu()}
               />
               {this.props.children}

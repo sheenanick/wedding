@@ -14,17 +14,17 @@ export default class Nav extends Component {
     };
   }
 
-  _isActive(key) {
+  isActive(key) {
     if (this.props.location.pathname === key) {
       return 'active';
     }
   }
 
-  _renderItems() {
+  renderItems() {
     return (
       Object.keys(MENU).map((key) => (
         <Link to={MENU[key]['path']} key={key}>
-          <p className={this._isActive(MENU[key]['path'])}>
+          <p className={this.isActive(MENU[key]['path'])}>
             {MENU[key]['label']}
           </p>
         </Link>
@@ -64,7 +64,7 @@ export default class Nav extends Component {
               />
             </div>
             <div className='center-vertical'>
-              {this._renderItems()}
+              {this.renderItems()}
             </div>
           </div>
         </div>
