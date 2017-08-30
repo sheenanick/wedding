@@ -15,7 +15,7 @@ class Travel extends Component {
       <div className='Travel'>
         <SectionHeader id='travel-header' img={travelPic} title='TRAVEL'/>
         <div className='content'>
-          <h2>Directions</h2>
+          <h2 className='section-subtitle'>Directions</h2>
           <div className='directions-container'>
             <div className='section directions-section'>
               <img src={car} id='car' className='travel-icons' alt='car icon'/>
@@ -29,15 +29,15 @@ class Travel extends Component {
         </div>
         <SectionHeader img={stayPic} title='WHERE TO STAY'/>
         <div className='content'>
-          <h2>Accommodations</h2>
+          <h2 className='section-subtitle'>Accommodations</h2>
           <div  className='section'>
-            <p>A group rate is available, but availability of rooms may be limited.</p>
+            <p>Reservations must be made before <strong>Monday, December 18, 2018</strong> to receive group rate. Availability of rooms may be limited.</p>
             <p><em>*3 night minimum stay required*</em></p>
           </div>
           <div className='section lodging'>
             <a id='nita' href='http://www.nitalakelodge.com/'><p className='accent'>NITA LAKE LODGE</p></a>
             <p>2131 Lake Placid Road</p>
-            <p>Whistler, British Columbia</p>
+            <p>Whistler, B.C.</p>
             <p>Canada V0N 1B2</p>
           </div>
           <div className='section'>

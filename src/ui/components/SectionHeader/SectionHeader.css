@@ -1,7 +1,7 @@
 .SectionHeader {
   width: 100%;
   color: #ffffff;
-  height: 100vh;
+  height: 50vh;
   background-size: cover;
   background-position: 50% 50%; }
 
@@ -18,3 +18,7 @@
 
 .section-title {
   margin-top: 92px; }
+
+@media only screen and (min-width: 460px) {
+  .SectionHeader {
+    height: 90vh; } }
