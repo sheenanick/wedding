@@ -1,0 +1,34 @@
+.Travel {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.travel-icons {
+  margin: 20px; }
+
+.lodging p {
+  margin: 8px; }
+
+#car {
+  width: 58px;
+  height: 58px; }
+
+#plane {
+  width: 48px;
+  height: 58px; }
+
+#nita {
+  text-decoration: none; }
+
+#map {
+  width: 100%;
+  margin: 16px 0; }
+
+#options {
+  margin-bottom: 32px; }
+
+@media only screen and (min-width: 760px) {
+  .directions-container {
+    display: flex; }
+  .directions-section {
+    width: 50%; } }

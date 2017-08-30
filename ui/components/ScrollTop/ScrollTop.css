@@ -1,0 +1,17 @@
+.ScrollTop {
+  padding-bottom: 64px; }
+
+.top-button {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border-color: #000000;
+  border-width: 1px; }
+  .top-button p {
+    margin: 0; }
+
+#up {
+  width: 20px; }
+
+#top {
+  font-size: 14px; }

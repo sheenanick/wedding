@@ -1,0 +1,31 @@
+.Countdown {
+  width: 90%;
+  max-width: 630px;
+  display: flex;
+  justify-content: space-around; }
+  .Countdown p {
+    margin: 0; }
+
+.column {
+  width: 62px;
+  padding: 12px 4px;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.number {
+  font-size: 34px; }
+
+.label {
+  font-size: 12px; }
+
+@media only screen and (min-width: 460px) {
+  .column {
+    width: 120px;
+    margin: 8px; }
+  .number {
+    font-size: 48px; }
+  .label {
+    font-size: 14px; } }
