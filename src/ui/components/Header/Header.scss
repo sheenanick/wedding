@@ -1,7 +1,7 @@
 @import "../../../util/theme";
 
 .Header {
-  height: 90vh;
+  height: 100vh;
   background-image: url("../../../img/path.jpg");
   background-size: cover;
   background-position: 50% 65%;
@@ -21,15 +21,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-top: $navbar-height/2;
   a {
     text-decoration: none;
   }
-
   a:visited {
     color: $black;
   }
-
   a:link {
     color: $black;
   }

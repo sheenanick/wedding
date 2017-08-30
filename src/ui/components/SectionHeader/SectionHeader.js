@@ -6,7 +6,7 @@ class SectionHeader extends Component {
     return (
       <div className='SectionHeader' style={{backgroundImage: `url(${this.props.img})`}}>
         <div className='overlay'>
-          <h1 className='title'>{this.props.title}</h1>
+          <h1 className='title section-title'>{this.props.title}</h1>
           <h4 className='subtitle'>{this.props.subtitle}</h4>
         </div>
       </div>

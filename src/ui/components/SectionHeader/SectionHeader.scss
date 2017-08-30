@@ -3,7 +3,7 @@
 .SectionHeader {
   width: 100%;
   color: $white;
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -19,4 +19,8 @@
   h1 {
     letter-spacing: 5px;
   }
+}
+
+.section-title {
+  margin-top: 36px + $navbar-height;
 }
