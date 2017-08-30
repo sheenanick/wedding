@@ -122,7 +122,7 @@
   align-items: center;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: $break-point) {
   #mobile-menu {
     display: none;
   }
