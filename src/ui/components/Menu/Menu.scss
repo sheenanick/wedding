@@ -1,31 +1,49 @@
 @import '../../../util/theme';
 
 .Menu {
-  height: 100vh;
-  width: 100%;
+  height: 100%;
+  width: $menu-width;
+  left: -$menu-width;
+  position: absolute;
+  background-color: $white;
+  border-right: 1px solid $light-gray;
+  box-sizing: border-box;
   h1:hover {
     opacity: 0.7;
   }
   img:hover {
     cursor: pointer;
   }
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
-.icon-container {
-  text-align: left;
-  position: absolute;
-  z-index: 1;
+.show-menu {
+  left: 0;
 }
 
 .menu-items {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
-    line-height: $line-height;
+  text-align: left;
+  h4 {
+    margin: $app-padding*1.5 0;
   }
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  background-color: $light-gray;
+  height: 1px;
+}
+
+#close-icon {
+  padding: 2px;
+  width: 20px;
+  height: 20px;
 }

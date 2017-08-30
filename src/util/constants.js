@@ -1,3 +1,8 @@
+import wedding from '../img/icons/home.png';
+import travel from '../img/icons/plane.png';
+import registry from '../img/icons/gift.png';
+import rsvp from '../img/icons/mail.png';
+
 export const ACTIONS = {
   TOGGLE_MENU: 'TOGGLE_MENU',
   TOGGLE_AUDIO: 'TOGGLE_AUDIO',
@@ -9,18 +14,22 @@ export const ACTIONS = {
 export const MENU = {
   HOME: {
     path: '/',
-    label: 'WEDDING',
+    label: 'wedding',
+    img: wedding
   },
   TRAVEL: {
     path: '/travel',
-    label: 'TRAVEL',
+    label: 'travel',
+    img: travel
   },
   REGISTRY: {
     path: '/registry',
-    label: 'REGISTRY',
+    label: 'registry',
+    img: registry
   },
   RSVP: {
     path: '/rsvp',
-    label: 'RSVP',
+    label: 'rsvp',
+    img: rsvp
   },
 }

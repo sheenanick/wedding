@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import menuIcon from '../../../img/icons/menu-button.png';
 import muteIcon from '../../../img/icons/mute.png';
 import audioIcon from '../../../img/icons/play.png';
+import { isActive } from '../../../util/util';
 import { MENU } from '../../../util/constants';
 import './Nav.scss';
 
@@ -14,19 +15,15 @@ export default class Nav extends Component {
     };
   }
 
-  _isActive(key) {
-    if (this.props.location.pathname === key) {
-      return 'active';
-    }
-  }
-
-  _renderItems() {
+  renderItems() {
+    let location = this.props.location.pathname;
     return (
       Object.keys(MENU).map((key) => (
-        <Link to={MENU[key]['path']} key={key}>
-          <p className={this._isActive(MENU[key]['path'])}>
-            {MENU[key]['label']}
-          </p>
+        <Link
+          className={isActive(location, MENU[key]['path'])}
+          to={MENU[key]['path']}
+          key={key}>
+          <p>{MENU[key]['label'].toUpperCase()}</p>
         </Link>
       ))
     );
@@ -65,7 +62,7 @@ export default class Nav extends Component {
                 onClick={this.props.toggleAudio}
               />
             </div>
-            {this._renderItems()}
+            {this.renderItems()}
           </div>
         </div>
       </div>
