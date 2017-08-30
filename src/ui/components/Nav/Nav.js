@@ -39,30 +39,25 @@ export default class Nav extends Component {
               onClick={this.props.toggleMenu}
             />
           </div>
-          <div className='center-vertical'>
-            <Link to='/' id='sheenatrong'><p>Sheena & Trong</p></Link>
-          </div>
+          <Link to='/'>
+            <p>Sheena & Trong</p>
+          </Link>
           <div className='icon center-vertical'>
             <img
-              className='audio-icon'
+              className='menu-icon'
               src={this.props.play ? audioIcon : muteIcon}
               onClick={this.props.toggleAudio}
             />
           </div>
         </div>
         <div className='navbar'>
-          <div>
-            <Link to='/'><p>Sheena & Trong</p></Link>
-          </div>
           <div className='navbar-items'>
-            <div id='audio'>
-              <img
-                className='audio-icon'
-                src={this.props.play ? audioIcon : muteIcon}
-                onClick={this.props.toggleAudio}
-              />
-            </div>
             {this.renderItems()}
+            <img
+              className='menu-icon'
+              src={this.props.play ? audioIcon : muteIcon}
+              onClick={this.props.toggleAudio}
+            />
           </div>
         </div>
       </div>

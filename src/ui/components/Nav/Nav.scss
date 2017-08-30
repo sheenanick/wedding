@@ -17,37 +17,25 @@
 .navbar {
   height: 100%;
   display: none;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 16px;
 }
 
 .navbar-items {
+  width: 100%;
   display: flex;
-  a {
-    margin-left: 32px;
+  justify-content: center;
+  align-items: center;
+  a, img {
+    margin: 0 16px;
   }
-}
-
-.audio-icon {
-  width: 24px;
 }
 
 #mobile-menu {
   display: flex;
   justify-content: space-between;
-}
-
-#sheenatrong {
-  width: 100%;
-  height: $line-height;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-#audio {
-  width: 24px;
-  display: flex;
-  align-items: center;
+#heart {
+  width: 14px;
+  height: 100%;
 }

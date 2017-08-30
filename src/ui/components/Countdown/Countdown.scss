@@ -1,59 +1,42 @@
+@import '../../../util/theme';
+
 .Countdown {
+  width: 90%;
+  max-width: $app-max-width;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
   p {
     margin: 0;
   }
 }
 
-.spinner-container {
-  width: 100%;
+.column {
+  width: 62px;
+  padding: 12px 4px;
+  border: 2px solid white;
+  border-radius: 5px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.spinner {
-  height: 44px;
-  width: 44px;
-}
-
-.column {
-  width: 62px;
-  height: 85px;
-  padding: 4px;
-  margin: 4px;
-  border: 2px solid white;
-  border-radius: 5px;
-}
-
-.column-items {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .number {
-  font-size: 36px;
+  font-size: 34px;
 }
 
 .label {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 @media only screen and (min-width: 760px) {
   .column {
     width: 120px;
-    height: 120px;
     margin: 8px;
   }
   .number {
     font-size: 48px;
   }
-  .spinner {
-    height: 58px;
-    width: 58px;
+  .label {
+    font-size: 14px;
   }
 }
