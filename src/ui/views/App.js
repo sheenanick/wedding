@@ -28,25 +28,30 @@ class App extends Component {
   }
 
   render() {
+    const { showMenu, play, location, activeMenu, children } = this.props;
     return (
-      <div className='App'>
-        <audio id='bgm' src={LoveSong} autoPlay muted={!this.props.play} loop />
-        {
-          this.props.showMenu ?
-            <Menu toggleMenu={() => this.toggle()}/>
-          :
-            <div>
-              <Nav
-                location={this.props.location}
-                activeMenu={this.props.activeMenu}
-                play={this.props.play}
-                toggleMenu={() => this.toggle()}
-                toggleAudio={() => this.toggleAudio()}
-                onClick={() => this.props.setActiveMenu()}
-              />
-              {this.props.children}
+      <div className={`App ${showMenu ? 'disable-scroll' : ''}`}>
+        <audio id='bgm' src={LoveSong} autoPlay muted={!play} loop />
+        <div>
+          <Menu
+            location={location}
+            showMenu={showMenu}
+            toggleMenu={() => this.toggle()}/>
+          <div
+            className={`app-content ${showMenu ? 'slide-content' : ''}`}>
+            <Nav
+              location={location}
+              activeMenu={activeMenu}
+              play={play}
+              toggleMenu={() => this.toggle()}
+              toggleAudio={() => this.toggleAudio()}
+              onClick={() => this.props.setActiveMenu()}
+            />
+            <div onClick={showMenu ? () => this.toggle() : null}>
+            {children}
             </div>
-        }
+          </div>
+        </div>
       </div>
     );
   }

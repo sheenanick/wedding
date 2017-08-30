@@ -1,26 +1,31 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import closeIcon from '../../../img/icons/close-button.png';
+import { isActive } from '../../../util/util';
 import { MENU } from '../../../util/constants';
 import './Menu.scss';
 
 export default class Menu extends Component {
   renderItems() {
+    let location = this.props.location.pathname;
     return (
       Object.keys(MENU).map((key) => (
-        <Link to={MENU[key]['path']} onClick={this.props.toggleMenu} key={key}>
-          <h1>{MENU[key]['label']}</h1>
-        </Link>
+        <div className='' key={key}>
+          <Link
+            className={`menu-item ${isActive(location, MENU[key]['path'])}`}
+            to={MENU[key]['path']}
+            onClick={this.props.toggleMenu}>
+            <img className='menu-icon icon' src={MENU[key]['img']} />
+            <h4>{MENU[key]['label'].toUpperCase()}</h4>
+          </Link>
+          <div className='divider'/>
+        </div>
       ))
     );
   }
 
   render() {
     return (
-      <div className='Menu'>
-        <div className='menu-icon-container'>
-          <img className='icon menu-icon' src={closeIcon} onClick={this.props.toggleMenu}/>
-        </div>
+      <div className={`Menu ${this.props.showMenu ? 'show-menu' : ''}`}>
         <div className='menu-items'>
           {this.renderItems()}
         </div>

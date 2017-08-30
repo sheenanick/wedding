@@ -27,21 +27,6 @@
   }
 }
 
-.inactive {
-  p {
-    color: $gray;
-  }
-  p:hover {
-    color: $dark-gray;
-  }
-}
-
-.active {
-  p {
-    color: $black;
-  }
-}
-
 #mobile-menu {
   display: flex;
   justify-content: space-between;
