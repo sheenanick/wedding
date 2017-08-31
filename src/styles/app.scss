@@ -12,7 +12,7 @@
     color: $red;
   }
   p, h1, h2, h3, h4, label {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 140%;
     letter-spacing: 1px;
   }
@@ -83,6 +83,7 @@
 
 .title {
   font-size: $font-size-title;
+  font-weight: 300;
   margin: 36px 0;
 }
 
@@ -92,10 +93,11 @@
 }
 
 .section {
-  padding: $app-padding;
+  padding: $app-padding 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .content {
@@ -136,9 +138,8 @@
   }
   .title {
     font-size: 76px;
-    font-weight: normal;
-    letter-spacing: 8px;
-    word-spacing: 22px;
+    letter-spacing: 10px;
+    word-spacing: 20px;
   }
   .subtitle {
     font-size: 28px;
