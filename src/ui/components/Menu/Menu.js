@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { isActive } from '../../../util/util';
 import { MENU } from '../../../util/constants';
-import './Menu.scss';
+import './Menu.css';
 
 export default class Menu extends Component {
   renderItems() {
@@ -14,7 +14,7 @@ export default class Menu extends Component {
             className={`menu-item ${isActive(location, MENU[key]['path'])}`}
             to={MENU[key]['path']}
             onClick={this.props.toggleMenu}>
-            <img className='menu-icon icon' src={MENU[key]['img']} />
+            <img className='menu-icon icon' src={MENU[key]['img']} alt={`${MENU[key]['label']} icon`}/>
             <h4>{MENU[key]['label'].toUpperCase()}</h4>
           </Link>
           <div className='divider'/>

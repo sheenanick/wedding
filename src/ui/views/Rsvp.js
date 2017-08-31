@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { submitRsvp } from '../../actions/rsvpActions';
 import SectionHeader from '../components/SectionHeader/SectionHeader';
 import rsvpPic from '../../img/rsvp.jpg';
-import '../../stylesheets/rsvp.scss';
+import '../../styles/rsvp.css';
 
 class Rsvp extends Component {
   constructor(props) {
@@ -57,7 +57,7 @@ class Rsvp extends Component {
   }
 
   validateEmail(email) {
-    const re = /[a-z0-9!#$%&'*+/=?^`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
+    const re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
     return !re.test(email);
   }
 

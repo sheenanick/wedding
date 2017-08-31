@@ -1,4 +1,4 @@
-@import '../util/theme';
+@import '../util/theme.scss';
 
 $input-margin-top: 6px;
 $input-padding: 4px;
@@ -89,6 +89,9 @@ input, textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  h4 {
+    margin: 0;
+  }
 }
 
 #message {

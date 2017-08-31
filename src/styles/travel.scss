@@ -1,0 +1,76 @@
+@import '../util/theme.scss';
+
+.Travel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-subtitle {
+  margin: 0;
+}
+
+.lodging p {
+  margin: 3px;
+}
+
+.activities-content {
+  padding: $section-padding $app-padding;
+}
+
+.activities {
+  max-width: 1150px;
+}
+
+.activities-column {
+  padding: $app-padding;
+}
+
+#car {
+  width: 54px;
+  height: 54px;
+  margin: 14px;
+}
+
+#plane {
+  width: 42px;
+  height: 42px;
+  margin: 20px;
+}
+
+#nita {
+  text-decoration: none;
+}
+
+#map {
+  width: 100%;
+  margin: $app-padding 0;
+}
+
+#options {
+  margin-bottom: $app-padding * 2;
+}
+
+#activities-subtitle {
+  max-width: $app-max-width;
+}
+
+@media only screen and (min-width: 760px) {
+  .directions-container {
+    display: flex;
+  }
+  .directions-section {
+    width: 50%;
+    margin: 10px;
+  }
+  .section-subtitle {
+    margin: 18px 0;
+  }
+  .activities {
+    display: flex;
+    justify-content: space-between;
+  }
+  .activities-column {
+    width: 33%;
+  }
+}

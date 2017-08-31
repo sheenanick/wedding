@@ -5,7 +5,7 @@ import muteIcon from '../../../img/icons/mute.png';
 import audioIcon from '../../../img/icons/play.png';
 import { isActive } from '../../../util/util';
 import { MENU } from '../../../util/constants';
-import './Nav.scss';
+import './Nav.css';
 
 export default class Nav extends Component {
   constructor(props) {
@@ -30,43 +30,38 @@ export default class Nav extends Component {
   }
 
   render() {
+    const { toggleMenu, toggleAudio, play } = this.props;
     return (
       <div className='Nav'>
         <div id='mobile-menu'>
-          <div>
-            <img className='icon menu-icon'
+          <div className='icon center-vertical'>
+            <img className='menu-icon'
               src={menuIcon}
-              onClick={this.props.toggleMenu}
+              onClick={toggleMenu}
+              alt='menu icon'
             />
           </div>
-          <div className='center-vertical'>
-            <Link to='/' id='sheenatrong'>
-              <p>Sheena & Trong</p>
-            </Link>
-          </div>
-          <div>
-            <img className='icon audio-icon'
-              src={this.props.play ? audioIcon : muteIcon}
-              onClick={this.props.toggleAudio}
+          <Link to='/'>
+            <p>Sheena & Trong</p>
+          </Link>
+          <div className='icon center-vertical'>
+            <img
+              className='menu-icon'
+              src={play ? audioIcon : muteIcon}
+              onClick={toggleAudio}
+              alt='audio icon'
             />
           </div>
         </div>
         <div className='navbar'>
-          <div className='center-vertical'>
-            <Link to='/'>
-              <p>Sheena & Trong</p>
-            </Link>
-          </div>
           <div className='navbar-items'>
-            <div id='audio'>
-              <img className='icon audio-icon'
-                src={this.props.play ? audioIcon : muteIcon}
-                onClick={this.props.toggleAudio}
-              />
-            </div>
-            <div className='center-vertical'>
-              {this.renderItems()}
-            </div>
+            {this.renderItems()}
+            <img
+              className='menu-icon'
+              src={play ? audioIcon : muteIcon}
+              onClick={toggleAudio}
+              alt='audio icon'
+            />
           </div>
         </div>
       </div>

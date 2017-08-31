@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { toggleMenu, toggleAudio, setActiveMenu } from '../../actions/navActions';
+import { toggleMenu, toggleAudio } from '../../actions/navActions';
 import { countdown } from '../../actions/countdownActions';
 import LoveSong from '../../LoveSong.m4a';
 import Nav from '../components/Nav/Nav';
 import Menu from '../components/Menu/Menu';
-import '../../stylesheets/app.scss';
+import '../../styles/app.css';
 
 class App extends Component {
   componentWillMount() {
@@ -28,7 +28,7 @@ class App extends Component {
   }
 
   render() {
-    const { showMenu, play, location, activeMenu, children } = this.props;
+    const { showMenu, play, location, children } = this.props;
     return (
       <div className={`App ${showMenu ? 'disable-scroll' : ''}`}>
         <audio id='bgm' src={LoveSong} autoPlay muted={!play} loop />
@@ -41,14 +41,12 @@ class App extends Component {
             className={`app-content ${showMenu ? 'slide-content' : ''}`}>
             <Nav
               location={location}
-              activeMenu={activeMenu}
               play={play}
               toggleMenu={() => this.toggle()}
               toggleAudio={() => this.toggleAudio()}
-              onClick={() => this.props.setActiveMenu()}
             />
             <div onClick={showMenu ? () => this.toggle() : null}>
-            {children}
+              {children}
             </div>
           </div>
         </div>
@@ -61,7 +59,6 @@ const mapStateToProps = (state) => {
   return {
     showMenu: state.navState.showMenu,
     play: state.navState.play,
-    activeMenu: state.navState.activeMenu
   }
 }
 
@@ -70,7 +67,6 @@ const mapDispatchToProps = (dispatch) => {
     toggleMenu: function() { dispatch(toggleMenu()); },
     toggleAudio: function() { dispatch(toggleAudio()); },
     countdown: function() { dispatch(countdown()); },
-    setActiveMenu: function(activeMenu) { dispatch(setActiveMenu()); },
   }
 }
 

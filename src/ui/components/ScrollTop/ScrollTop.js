@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import up from '../../../img/icons/up.png';
-import './ScrollTop.scss';
+import './ScrollTop.css';
 
 class ScrollTop extends Component {
   scrollToTop() {

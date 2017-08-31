@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux'
 import { browserHistory } from 'react-router';
-import moment from 'moment';
-
 import Header from '../components/Header/Header';
 import Details from '../components/Details/Details';
-import { WEDDING_INFO } from '../../weddingInfo.json';
-import '../../stylesheets/home.scss';
+import { WEDDING_INFO } from '../../weddingInfo.js';
+import '../../styles/home.css';
 
 class Home extends Component {
   componentDidMount() {
@@ -15,7 +13,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div id="home">
+      <div>
         <Header date={this.props.date} loading={this.props.loading}/>
         <div className='home-content'>
           <Details id='ceremony'

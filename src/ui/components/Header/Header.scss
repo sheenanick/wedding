@@ -1,4 +1,4 @@
-@import "../../../util/theme";
+@import "../../../util/theme.scss";
 
 .Header {
   height: 100vh;
@@ -9,47 +9,45 @@
   position: relative;
 }
 
-.header-div {
+.header-overlay {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .header-content {
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: $navbar-height/2;
-  a {
-    text-decoration: none;
-  }
-  a:visited {
-    color: $black;
-  }
-  a:link {
-    color: $black;
-  }
+}
+
+.title-container {
+  width: 100%;
+  max-width: $app-max-width;
+  margin: $navbar-height*1.5 $app-padding;
 }
 
 .header-title {
-  font-size: $font-size-title;
+  font-size: 80px;
+  line-height: 72px;
 }
 
-.rsvp-button {
-  border-radius: 32px;
-  border-style: none;
-  margin: 56px 0;
-  padding: 14px 42px;
-}
-
-.button:hover {
-  background-color: rgba(255,255,255,0.6);
-}
-
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: $break-point) {
   .header-title {
-    font-size: 70px;
+    font-size: 89px;
+    letter-spacing: 5px;
+  }
+}
+
+@media only screen and (min-width: $break-point+200px) {
+  .header-title {
+    font-size: 75px;
+  }
+  .title-container {
+    display: flex;
+    justify-content: space-around;
   }
 }

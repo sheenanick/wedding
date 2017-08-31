@@ -1,0 +1,56 @@
+.Travel {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.section-subtitle {
+  margin: 0; }
+
+.lodging p {
+  margin: 3px; }
+
+.activities-content {
+  padding: 38px 16px; }
+
+.activities {
+  max-width: 1150px; }
+
+.activities-column {
+  padding: 16px; }
+
+#car {
+  width: 54px;
+  height: 54px;
+  margin: 14px; }
+
+#plane {
+  width: 42px;
+  height: 42px;
+  margin: 20px; }
+
+#nita {
+  text-decoration: none; }
+
+#map {
+  width: 100%;
+  margin: 16px 0; }
+
+#options {
+  margin-bottom: 32px; }
+
+#activities-subtitle {
+  max-width: 630px; }
+
+@media only screen and (min-width: 760px) {
+  .directions-container {
+    display: flex; }
+  .directions-section {
+    width: 50%;
+    margin: 10px; }
+  .section-subtitle {
+    margin: 18px 0; }
+  .activities {
+    display: flex;
+    justify-content: space-between; }
+  .activities-column {
+    width: 33%; } }
