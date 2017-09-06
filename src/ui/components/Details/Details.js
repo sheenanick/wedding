@@ -22,7 +22,7 @@ class Details extends Component {
           <div className='section'>
             <p><em>*Underground parking available.</em></p>
             <p><em>*Ceremony will be held outside at the Porte Cochere.</em></p>
-            <p><em>*Reception to follow.</em></p>
+            <p><em>*Reception to follow inside.</em></p>
           </div>
         </div>
       </div>
