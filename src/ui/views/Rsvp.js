@@ -71,7 +71,7 @@ class Rsvp extends Component {
             <h3 className='section'>Thank you for your RSVP!</h3>
             :
             <div id='formSection'>
-              <h4>KINDLY RESPOND BY JAN 1, 2018</h4>
+              <h4>KINDLY RESPOND BY DEC 15, 2017</h4>
               <form className='form' onSubmit={this.handleSubmit}>
                 <div className='form-item'>
                   {
