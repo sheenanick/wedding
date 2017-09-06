@@ -11,9 +11,8 @@ class Registry extends Component {
         <SectionHeader img={registryPic} title='REGISTRY'/>
         <div className='content'>
           <p>
-            We don't need you to bring us gifts – we know plane tickets are expensive and your presence at the wedding is enough! If you really want to give us something, a contribution to our honeymoon fund would be awesome. Or there's Amazon.
+            We don't need you to bring us gifts – we know plane tickets are expensive and your presence at the wedding is enough! If you really want to give us something, a contribution to our honeymoon fund would be awesome.
           </p>
-          <a href='https://www.amazon.com/wedding/share/trongandsheena' target='_blank' rel='noopener noreferrer'><img src={amazonLogo} alt='Amazon Logo' /></a>
         </div>
       </div>
     );
