@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SectionHeader from '../components/SectionHeader/SectionHeader';
-import registryPic from '../../img/gifts.jpg';
+import registryPic from '../../img/cabin.jpg';
 import amazonLogo from '../../img/icons/amazon.png';
 import '../../styles/registry.css';
 
