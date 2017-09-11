@@ -5,6 +5,7 @@ import { countdown } from '../../actions/countdownActions';
 import LoveSong from '../../LoveSong.m4a';
 import Nav from '../components/Nav/Nav';
 import Menu from '../components/Menu/Menu';
+import Footer from '../components/Footer/Footer';
 import '../../styles/app.css';
 
 class App extends Component {
@@ -47,6 +48,7 @@ class App extends Component {
             />
             <div onClick={showMenu ? () => this.toggle() : null}>
               {children}
+              <Footer />
             </div>
           </div>
         </div>

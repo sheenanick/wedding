@@ -8,7 +8,7 @@ class Registry extends Component {
     return (
       <div className='Registry'>
         <SectionHeader img={registryPic} title='REGISTRY'/>
-        <div className='content'>
+        <div className='content' id='registry'>
           <p>
             We don't need you to bring us gifts – we know plane tickets are expensive and your presence at the wedding is enough! If you really want to give us something, a contribution to our honeymoon fund would be awesome.
           </p>

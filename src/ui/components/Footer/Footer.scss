@@ -1,0 +1,25 @@
+@import "../../../util/theme.scss";
+
+.Footer {
+  height: 80px;
+  background-color: $light-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  font-size: 12px;
+}
+
+@media only screen and (min-width: $break-point) {
+  .Footer {
+    height: 160px;
+  }
+}
+
+@media only screen and (min-width: $second-break-point) {
+  .Footer {
+    height: 200px;
+  }
+}
