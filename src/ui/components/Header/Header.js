@@ -10,13 +10,13 @@ class Header extends Component {
           <div className='header-content'>
             <div className='title-container'>
               <div className='header-title cursive'>
-                Sheena
+                #Winter
               </div>
               <div className='header-title cursive'>
-                &
+                WonDo
               </div>
               <div className='header-title cursive'>
-                Trong
+                land
               </div>
             </div>
             <Countdown date={this.props.date} loading={this.props.loading}/>
