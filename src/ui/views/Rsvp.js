@@ -13,6 +13,7 @@ class Rsvp extends Component {
       firstName: '',
       lastName: '',
       attending: 'true',
+      food: '',
       message: '',
       submitted: false,
       emailError: false,
@@ -34,7 +35,7 @@ class Rsvp extends Component {
   handleSubmit(event) {
     event.preventDefault();
     //validate form inputs
-    const { email, firstName, lastName, attending, message } = this.state;
+    const { email, firstName, lastName, attending, food, message } = this.state;
     const errors = {
       emailError: this.validateEmail(email),
       nameError: firstName === '' || lastName === '',
@@ -50,6 +51,7 @@ class Rsvp extends Component {
         firstName,
         lastName,
         attending,
+        food,
         message
       }
       this.props.submitRsvp(rsvp);
@@ -62,12 +64,13 @@ class Rsvp extends Component {
   }
 
   render() {
+    const { submitted, emailError, email, nameError, firstName, lastName, attending, food, message  } = this.state;
     return (
       <div className='Rsvp'>
         <SectionHeader img={rsvpPic} title='RSVP'/>
         <div className='content'>
           {
-            this.state.submitted ?
+            submitted ?
             <h3 className='section'>Thank you for your RSVP!</h3>
             :
             <div id='formSection'>
@@ -75,40 +78,44 @@ class Rsvp extends Component {
               <form className='form' onSubmit={this.handleSubmit}>
                 <div className='form-item'>
                   {
-                    this.state.emailError ?
+                    emailError ?
                     <p className='errorMessage'>Valid Email Address is required</p>
                     : null
                   }
                   <label>Email Address*</label>
-                  <input className={this.state.emailError ? 'input form-box error-box' : 'input form-box'} name='email' type='email' value={this.state.email} onChange={this.handleChange} />
+                  <input className={emailError ? 'input form-box error-box' : 'input form-box'} name='email' type='email' value={email} onChange={this.handleChange} />
                 </div>
                 <div className='form-item'>
                   {
-                    this.state.nameError ?
+                    nameError ?
                     <p className='errorMessage'>Name is required</p>
                     : null
                   }
                   <div className='name-container'>
                     <div className='name-field'>
                       <label>First Name*</label>
-                      <input className={this.state.nameError ? 'name error-box' : 'name form-box'} name='firstName' type='text' value={this.state.firstName} onChange={this.handleChange} />
+                      <input className={nameError ? 'name error-box' : 'name form-box'} name='firstName' type='text' value={firstName} onChange={this.handleChange} />
                     </div>
                     <div className='name-field'>
                       <label>Last Name*</label>
-                      <input className={this.state.nameError ? 'name error-box' : 'name form-box'} name='lastName' type='text' value={this.state.lastName} onChange={this.handleChange} />
+                      <input className={nameError ? 'name error-box' : 'name form-box'} name='lastName' type='text' value={lastName} onChange={this.handleChange} />
                     </div>
                   </div>
                 </div>
                 <div className='radio form-item'>
                   <label>Will you be attending?*</label>
-                  <input name='attending' type='radio' value='true' checked={this.state.attending === 'true'} onChange={this.handleChange} />
+                  <input name='attending' type='radio' value='true' checked={attending === 'true'} onChange={this.handleChange} />
                   <label>Yes</label>
-                  <input name='attending' type='radio' value='false' checked={this.state.attending === 'false'}  onChange={this.handleChange} />
+                  <input name='attending' type='radio' value='false' checked={attending === 'false'} onChange={this.handleChange} />
                   <label>No</label>
                 </div>
-                <div className='message-container form-item'>
+                <div className='form-item'>
+                  <label>Food Allergies/Dietary Restrictions</label>
+                  <textarea className='form-box text-area' name='food' type='text' value={food} onChange={this.handleChange} />
+                </div>
+                <div className='form-item'>
                   <label>Message</label>
-                  <textarea className='form-box' id='message' name='message' type='text' value={this.state.message} onChange={this.handleChange} />
+                  <textarea className='form-box text-area' name='message' type='text' value={message} onChange={this.handleChange} />
                 </div>
                 <div className='button-container'>
                   <button id='submit-button' className='black-button' type='submit' value='submit'>SUBMIT</button>
@@ -123,9 +130,7 @@ class Rsvp extends Component {
 }
 
 const mapStateToProps = (state) => {
-  return {
-    loading: state.rsvpState.loading,
-  }
+  return { }
 }
 
 const mapDispatchToProps = (dispatch) => {
