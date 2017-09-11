@@ -30,7 +30,7 @@ class Travel extends Component {
         <SectionHeader img={stayPic} title='WHERE TO STAY'/>
         <div className='content'>
           <h2 className='section-subtitle'>Accommodations</h2>
-          <p className='section'>Reservations made before Monday, December 18, 2018 will get a group rate. Call 1-888-755-6482 or email info@nitalakelodge.com and mention our names. Availability of rooms may be limited.</p>
+          <p className='section'>Make a reservation before Monday, December 18, 2018 to get the group rate. Call 1-888-755-6482 or email info@nitalakelodge.com and mention our names. Availability of rooms may be limited.</p>
           <p><em>*3 night minimum stay required*</em></p>
           <div className='section lodging'>
             <a id='nita' href='http://www.nitalakelodge.com/'><p className='accent'>NITA LAKE LODGE</p></a>
