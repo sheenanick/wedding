@@ -16,6 +16,9 @@
     line-height: 140%;
     letter-spacing: 1px;
   }
+  h2, h3 {
+    font-weight: 600;
+  }
 }
 
 .disable-scroll {
@@ -119,6 +122,13 @@
   border-style: none;
 }
 
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .center-vertical {
   display: flex;
   align-items: center;
@@ -126,8 +136,9 @@
 
 @media only screen and (min-width: $break-point) {
   .content {
+    min-height: 77vh;
     h2 {
-      font-size: 32px;
+      font-size: 30px;
     }
   }
   .title {
@@ -137,8 +148,5 @@
   }
   .subtitle {
     font-size: 28px;
-  }
-  .content {
-    padding: 64px $app-padding;
   }
 }

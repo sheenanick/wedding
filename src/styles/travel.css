@@ -4,13 +4,19 @@
   align-items: center; }
 
 .section-subtitle {
-  margin: 0; }
+  margin: 0 0 16px 0; }
+
+.accommodations {
+  font-size: 18px;
+  margin: 0 16px; }
 
 .lodging p {
   margin: 3px; }
 
 .activities-content {
-  padding: 38px 16px; }
+  padding: 68px 16px; }
+  .activities-content h3 {
+    margin: 0 0 16px 0; }
 
 .activities {
   max-width: 1150px; }
@@ -29,7 +35,8 @@
   margin: 20px; }
 
 #nita {
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: 600; }
 
 #map {
   width: 100%;
