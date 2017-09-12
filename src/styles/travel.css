@@ -12,6 +12,16 @@
 
 .lodging p {
   margin: 3px; }
+  .lodging p a {
+    text-decoration: none; }
+  .lodging p a:link {
+    color: #000000; }
+  .lodging p a:visited {
+    color: #000000; }
+
+.address-icon {
+  width: 16px;
+  margin: 0 6px 0 0; }
 
 .activities-content {
   padding: 68px 16px; }
@@ -37,10 +47,6 @@
 #nita {
   text-decoration: none;
   font-weight: 600; }
-
-#map {
-  width: 100%;
-  margin: 16px 0; }
 
 #options {
   margin-bottom: 32px; }

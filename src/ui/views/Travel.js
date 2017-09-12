@@ -6,6 +6,8 @@ import stayPic from '../../img/travel/village.jpg';
 import doPic from '../../img/travel/snowmobile.jpg';
 import plane from '../../img/icons/plane.png';
 import car from '../../img/icons/car.png';
+import phone from '../../img/icons/phone.png';
+import mail from '../../img/icons/contact.png';
 import '../../styles/travel.css';
 
 class Travel extends Component {
@@ -39,8 +41,8 @@ class Travel extends Component {
             <a id='nita' href='http://www.nitalakelodge.com/'><p className='accent'>NITA LAKE LODGE</p></a>
             <p>2131 Lake Placid Road</p>
             <p>Whistler, B.C. V0N 1B2</p>
-            <p>1-888-755-6482</p>
-            <p>info@nitalakelodge.com</p>
+            <p><img className='address-icon' src={phone} />1-888-755-6482</p>
+            <p><a href='mailto:info@nitalakelodge.com' target='_top'><img className='address-icon' src={mail} />info@nitalakelodge.com</a></p>
           </div>
         </div>
         <SectionHeader img={doPic} title='WHAT TO DO'/>
