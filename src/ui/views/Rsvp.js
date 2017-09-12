@@ -55,6 +55,15 @@ class Rsvp extends Component {
         message
       }
       this.props.submitRsvp(rsvp);
+    } else {
+      //focus on input with error
+      if (errors.emailError) {
+        this.refs.emailError.focus();
+      } else if(!firstName) {
+        this.refs.firstName.focus();
+      } else {
+        this.refs.lastName.focus();
+      }
     }
   }
 
@@ -83,7 +92,7 @@ class Rsvp extends Component {
                     : null
                   }
                   <label>Email Address*</label>
-                  <input className={emailError ? 'input form-box error-box' : 'input form-box'} name='email' type='email' value={email} onChange={this.handleChange} />
+                  <input className={emailError ? 'input form-box error-box' : 'input form-box'} ref='emailError' name='email' type='email' value={email} onChange={this.handleChange} />
                 </div>
                 <div className='form-item'>
                   {
@@ -94,11 +103,11 @@ class Rsvp extends Component {
                   <div className='name-container'>
                     <div className='name-field'>
                       <label>First Name*</label>
-                      <input className={nameError ? 'name error-box' : 'name form-box'} name='firstName' type='text' value={firstName} onChange={this.handleChange} />
+                      <input className={nameError ? 'name error-box' : 'name form-box'} ref='firstName' name='firstName' type='text' value={firstName} onChange={this.handleChange} />
                     </div>
                     <div className='name-field'>
                       <label>Last Name*</label>
-                      <input className={nameError ? 'name error-box' : 'name form-box'} name='lastName' type='text' value={lastName} onChange={this.handleChange} />
+                      <input className={nameError ? 'name error-box' : 'name form-box'} ref='lastName' name='lastName' type='text' value={lastName} onChange={this.handleChange} />
                     </div>
                   </div>
                 </div>
