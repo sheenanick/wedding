@@ -41,7 +41,7 @@ class Travel extends Component {
             <a id='nita' href='http://www.nitalakelodge.com/'><p className='accent'>NITA LAKE LODGE</p></a>
             <p>2131 Lake Placid Road</p>
             <p>Whistler, B.C. V0N 1B2</p>
-            <p>< a href='tel:503-123-1234'><img className='address-icon' src={phone} />1-888-755-6482</a></p>
+            <p>< a href='tel:1-888-755-6482'><img className='address-icon' src={phone} />1-888-755-6482</a></p>
             <p><a href='mailto:info@nitalakelodge.com' target='_top'><img className='address-icon' src={mail} />info@nitalakelodge.com</a></p>
           </div>
         </div>
