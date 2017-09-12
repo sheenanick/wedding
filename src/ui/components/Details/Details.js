@@ -18,7 +18,7 @@ class Details extends Component {
             <p>{address.street}</p>
             <p>{address.cityzip}</p>
           </div>
-          <a href='https://www.google.com/maps/place/Nita+Lake+Lodge/@50.0964651,-122.9979783,17z/data=!3m1!4b1!4m5!3m4!1s0x548722d182d467f3:0x914930a812f280ee!8m2!3d50.0964651!4d-122.995795' target='_blank' rel='noopener noreferrer'>
+          <a href={address.map} target='_blank' rel='noopener noreferrer'>
             <button className='button black-button'>VIEW MAP</button>
           </a>
           <div className='section'>
