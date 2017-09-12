@@ -4,13 +4,29 @@
   align-items: center; }
 
 .section-subtitle {
-  margin: 0; }
+  margin: 0 0 16px 0; }
+
+.accommodations {
+  font-size: 18px;
+  margin: 0 16px; }
 
 .lodging p {
   margin: 3px; }
+  .lodging p a {
+    text-decoration: none; }
+  .lodging p a:link {
+    color: #000000; }
+  .lodging p a:visited {
+    color: #000000; }
+
+.address-icon {
+  width: 16px;
+  margin: 0 6px 0 0; }
 
 .activities-content {
-  padding: 38px 16px; }
+  padding: 68px 16px; }
+  .activities-content h3 {
+    margin: 0 0 16px 0; }
 
 .activities {
   max-width: 1150px; }
@@ -29,11 +45,8 @@
   margin: 20px; }
 
 #nita {
-  text-decoration: none; }
-
-#map {
-  width: 100%;
-  margin: 16px 0; }
+  text-decoration: none;
+  font-weight: 600; }
 
 #options {
   margin-bottom: 32px; }
@@ -48,7 +61,7 @@
     width: 50%;
     margin: 10px; }
   .section-subtitle {
-    margin: 18px 0; }
+    margin: 0 0 18px 0; }
   .activities {
     display: flex;
     justify-content: space-between; }

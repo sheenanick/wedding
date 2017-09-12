@@ -2,3 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+#registry {
+  min-height: 45vh; }

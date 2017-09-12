@@ -4,9 +4,10 @@ import ScrollTop from '../components/ScrollTop/ScrollTop';
 import travelPic from '../../img/travel/travel.jpg';
 import stayPic from '../../img/travel/village.jpg';
 import doPic from '../../img/travel/snowmobile.jpg';
-import map from '../../img/travel/map.jpg';
 import plane from '../../img/icons/plane.png';
 import car from '../../img/icons/car.png';
+import phone from '../../img/icons/phone.png';
+import mail from '../../img/icons/contact.png';
 import '../../styles/travel.css';
 
 class Travel extends Component {
@@ -14,7 +15,7 @@ class Travel extends Component {
     return (
       <div className='Travel'>
         <SectionHeader id='travel-header' img={travelPic} title='TRAVEL'/>
-        <div className='content'>
+        <div className='content center'>
           <h2 className='section-subtitle'>Directions</h2>
           <div className='directions-container'>
             <div className='section directions-section'>
@@ -28,27 +29,26 @@ class Travel extends Component {
           </div>
         </div>
         <SectionHeader img={stayPic} title='WHERE TO STAY'/>
-        <div className='content'>
+        <div className='content center'>
           <h2 className='section-subtitle'>Accommodations</h2>
-          <p className='section'>Reservations made before Monday, December 18, 2018 will get a group rate. Call 1-888-755-6482 or email info@nitalakelodge.com and mention our names. Availability of rooms may be limited.</p>
-          <p><em>*3 night minimum stay required*</em></p>
+          <div className='section'>
+            <p className='accommodations'>Group rates are available for reservations made before December 18th, 2017.</p>
+          </div>
+          <div className='section'>
+            <p><em>*3 night minimum stay required*</em></p>
+          </div>
           <div className='section lodging'>
             <a id='nita' href='http://www.nitalakelodge.com/'><p className='accent'>NITA LAKE LODGE</p></a>
             <p>2131 Lake Placid Road</p>
-            <p>Whistler, B.C.</p>
-            <p>Canada V0N 1B2</p>
+            <p>Whistler, B.C. V0N 1B2</p>
+            <p>< a href='tel:1-888-755-6482'><img className='address-icon' src={phone} />1-888-755-6482</a></p>
+            <p><a href='mailto:info@nitalakelodge.com' target='_top'><img className='address-icon' src={mail} />info@nitalakelodge.com</a></p>
           </div>
-          <div className='section'>
-            <img id='map' src={map} alt='map of Whistler'/>
-          </div>
-          <p id='options' className='section'>
-            <em>Check out <a href='https://www.airbnb.com/' target='_blank' rel='noopener noreferrer'>Airbnb</a> and <a href='https://www.vrbo.com/' target='_blank' rel='noopener noreferrer'>VRBO</a> for more options!</em>
-          </p>
         </div>
         <SectionHeader img={doPic} title='WHAT TO DO'/>
         <div className='activities-content'>
-          <div className='section'>
-            <h3 id='activities-subtitle'>Whether you're an adrenaline junkie, a foodie, an art-connoisseur or someone who loves to dabble in it all, there's something here for everyone.</h3>
+          <div className='center'>
+            <h3 id='activities-subtitle'>"Whether you're an adrenaline junkie, a foodie, an art-connoisseur or someone who loves to dabble in it all, there's something here for everyone."</h3>
           </div>
           <div className='activities'>
             <div className='activities-column'>

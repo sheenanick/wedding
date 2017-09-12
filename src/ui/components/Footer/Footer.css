@@ -1,0 +1,17 @@
+.Footer {
+  height: 80px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#footer {
+  font-size: 12px; }
+
+@media only screen and (min-width: 460px) {
+  .Footer {
+    height: 160px; } }
+
+@media only screen and (min-width: 660px) {
+  .Footer {
+    height: 200px; } }

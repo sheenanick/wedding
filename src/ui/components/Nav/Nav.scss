@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: center;
   a, img {
-    margin: 0 16px;
+    margin: 0 32px;
   }
 }
 
@@ -38,4 +38,13 @@
 #heart {
   width: 14px;
   height: 100%;
+}
+
+@media only screen and (min-width: $second-break-point) {
+  #mobile-menu {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+  }
 }

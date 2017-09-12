@@ -7,15 +7,37 @@
 }
 
 .section-subtitle {
-  margin: 0;
+  margin: 0 0 $app-padding 0;
+}
+
+.accommodations {
+  font-size: 18px;
+  margin: 0 $app-padding;
 }
 
 .lodging p {
   margin: 3px;
+  a {
+    text-decoration: none;
+  }
+  a:link {
+    color: $black;
+  }
+  a:visited {
+    color: $black;
+  }
+}
+
+.address-icon {
+  width: 16px;
+  margin: 0 6px 0 0;
 }
 
 .activities-content {
   padding: $section-padding $app-padding;
+  h3 {
+    margin: 0 0 $app-padding 0;
+  }
 }
 
 .activities {
@@ -40,11 +62,7 @@
 
 #nita {
   text-decoration: none;
-}
-
-#map {
-  width: 100%;
-  margin: $app-padding 0;
+  font-weight: 600;
 }
 
 #options {
@@ -64,7 +82,7 @@
     margin: 10px;
   }
   .section-subtitle {
-    margin: 18px 0;
+    margin: 0 0 18px 0;
   }
   .activities {
     display: flex;

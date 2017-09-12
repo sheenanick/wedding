@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center; }
   .navbar-items a, .navbar-items img {
-    margin: 0 16px; }
+    margin: 0 32px; }
 
 #mobile-menu {
   display: flex;
@@ -29,3 +29,9 @@
 #heart {
   width: 14px;
   height: 100%; }
+
+@media only screen and (min-width: 660px) {
+  #mobile-menu {
+    display: none; }
+  .navbar {
+    display: flex; } }

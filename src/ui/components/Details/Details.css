@@ -14,14 +14,3 @@ p {
   margin: 18px 0 24px; }
   .time h3 {
     margin: 0; }
-
-.map-button {
-  border-color: black;
-  padding: 16px;
-  margin: 32px 0 16px 0; }
-  .map-button a {
-    text-decoration: none; }
-  .map-button a:visited {
-    color: #000000; }
-  .map-button a:link {
-    color: #000000; }

@@ -16,6 +16,12 @@
     line-height: 140%;
     letter-spacing: 1px;
   }
+  h2, h3 {
+    font-weight: 600;
+  }
+  button:hover {
+    cursor: pointer;
+  }
 }
 
 .disable-scroll {
@@ -107,16 +113,28 @@
 
 .button {
   background-color: $white;
-  font-size: $button-text-size;
 }
 
 .black-button {
   height: $button-height;
   width: 132px;
   font-size: $button-text-size;
+  background-color: $white;
+  color: $black;
+  border-color: $black;
+  margin: 32px 0 16px 0;
+}
+
+.black-button:hover {
   background-color: $black;
   color: $white;
-  border-style: none;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .center-vertical {
@@ -125,15 +143,10 @@
 }
 
 @media only screen and (min-width: $break-point) {
-  #mobile-menu {
-    display: none;
-  }
-  .navbar {
-    display: flex;
-  }
   .content {
+    min-height: 75vh;
     h2 {
-      font-size: 32px;
+      font-size: 30px;
     }
   }
   .title {
@@ -143,8 +156,5 @@
   }
   .subtitle {
     font-size: 28px;
-  }
-  .content {
-    padding: 64px $app-padding;
   }
 }

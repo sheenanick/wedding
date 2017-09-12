@@ -21,18 +21,3 @@ p {
     margin: 0;
   }
 }
-
-.map-button {
-  border-color: black;
-  padding: 16px;
-  margin: 32px 0 16px 0;
-  a {
-    text-decoration: none;
-  }
-  a:visited {
-    color: $black;
-  }
-  a:link {
-    color: $black;
-  }
-}

@@ -1,17 +1,26 @@
 .ScrollTop {
-  padding-bottom: 38px; }
+  padding-bottom: 68px; }
 
 .top-button {
-  width: 65px;
-  height: 65px;
+  width: 54px;
+  height: 54px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  border-color: #000000;
+  border-color: #333333;
   border-width: 1px; }
   .top-button p {
-    margin: 0; }
+    margin: 4px 0 0 0;
+    font-size: 11px;
+    font-weight: 700;
+    color: #333333; }
 
-#up {
-  width: 20px; }
+#arrow {
+  width: 24px; }
 
-#top {
-  font-size: 14px; }
+@media only screen and (min-width: 460px) {
+  #arrow {
+    width: 14px; } }

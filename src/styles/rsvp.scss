@@ -78,6 +78,14 @@ input, textarea {
   margin-right: 12px;
 }
 
+.text-area {
+  height: 100px;
+  width: 100%;
+  margin-top: $input-margin-top;
+  padding: $input-padding;
+  font-size: $font-size-label;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -92,20 +100,4 @@ input, textarea {
   h4 {
     margin: 0;
   }
-}
-
-#message {
-  height: 100px;
-  width: 100%;
-  margin-top: $input-margin-top;
-  padding: $input-padding;
-  font-size: $font-size-label;
-}
-
-#submit-button {
-  margin: 12px 0;
-}
-
-#submit-button:hover {
-  background-color: rgba(0,0,0,0.6);
 }

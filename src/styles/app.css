@@ -11,6 +11,10 @@
     font-family: 'Open Sans', sans-serif;
     line-height: 140%;
     letter-spacing: 1px; }
+  .App h2, .App h3 {
+    font-weight: 600; }
+  .App button:hover {
+    cursor: pointer; }
 
 .disable-scroll {
   overflow: hidden; }
@@ -77,36 +81,42 @@
 
 .content {
   max-width: 630px;
-  padding: 38px 16px; }
+  padding: 68px 16px; }
 
 .button {
-  background-color: #ffffff;
-  font-size: 18px; }
+  background-color: #ffffff; }
 
 .black-button {
   height: 48px;
   width: 132px;
   font-size: 18px;
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #000000;
+  margin: 32px 0 16px 0; }
+
+.black-button:hover {
   background-color: #000000;
-  color: #ffffff;
-  border-style: none; }
+  color: #ffffff; }
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .center-vertical {
   display: flex;
   align-items: center; }
 
 @media only screen and (min-width: 460px) {
-  #mobile-menu {
-    display: none; }
-  .navbar {
-    display: flex; }
-  .content h2 {
-    font-size: 32px; }
+  .content {
+    min-height: 75vh; }
+    .content h2 {
+      font-size: 30px; }
   .title {
     font-size: 76px;
     letter-spacing: 10px;
     word-spacing: 20px; }
   .subtitle {
-    font-size: 28px; }
-  .content {
-    padding: 64px 16px; } }
+    font-size: 28px; } }
