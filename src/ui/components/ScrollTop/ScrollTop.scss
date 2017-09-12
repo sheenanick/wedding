@@ -21,9 +21,14 @@
     font-weight: 700;
     color: $dark-gray;
   }
-  img {
-    width: 22px;
-    align-items: center;
-    justify-content: center;
+}
+
+#arrow {
+  width: 24px;
+}
+
+@media only screen and (min-width: $break-point) {
+  #arrow {
+    width: 14px;
   }
 }

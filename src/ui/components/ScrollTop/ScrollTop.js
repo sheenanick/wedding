@@ -10,7 +10,7 @@ class ScrollTop extends Component {
     return (
       <div className='ScrollTop'>
         <button className='button top-button' onClick={() => this.scrollToTop()}>
-          <img src={up} alt='up arrow'/>
+          <img id='arrow' src={up} alt='up arrow'/>
           <p id='top'>TOP</p>
         </button>
       </div>
