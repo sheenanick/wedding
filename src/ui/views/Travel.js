@@ -48,7 +48,7 @@ class Travel extends Component {
         <SectionHeader img={doPic} title='WHAT TO DO'/>
         <div className='activities-content'>
           <div className='center'>
-            <h3 id='activities-subtitle'>Whether you're an adrenaline junkie, a foodie, an art-connoisseur or someone who loves to dabble in it all, there's something here for everyone.</h3>
+            <h3 id='activities-subtitle'>"Whether you're an adrenaline junkie, a foodie, an art-connoisseur or someone who loves to dabble in it all, there's something here for everyone."</h3>
           </div>
           <div className='activities'>
             <div className='activities-column'>
