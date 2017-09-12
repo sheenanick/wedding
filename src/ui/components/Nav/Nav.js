@@ -42,7 +42,7 @@ export default class Nav extends Component {
             />
           </div>
           <Link to='/'>
-            <p>Sheena & Trong</p>
+            <p>Trong & Sheena</p>
           </Link>
           <div className='icon center-vertical'>
             <img

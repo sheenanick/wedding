@@ -13,6 +13,8 @@
     letter-spacing: 1px; }
   .App h2, .App h3 {
     font-weight: 600; }
+  .App button:hover {
+    cursor: pointer; }
 
 .disable-scroll {
   overflow: hidden; }
@@ -89,9 +91,14 @@
   height: 48px;
   width: 132px;
   font-size: 18px;
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #000000;
+  margin: 32px 0 16px 0; }
+
+.black-button:hover {
   background-color: #000000;
-  color: #ffffff;
-  border-style: none; }
+  color: #ffffff; }
 
 .center {
   display: flex;

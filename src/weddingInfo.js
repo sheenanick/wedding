@@ -8,7 +8,7 @@ export const WEDDING_INFO = {
     "address": {
       "name": "NITA LAKE LODGE",
       "street": "2131 Lake Placid Road",
-      "cityzip": "Whistler, B.C.",
+      "cityzip": "Whistler, B.C. V0N 1B2",
       "map": "www.google.com",
     },
   },
