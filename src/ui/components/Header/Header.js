@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import moment from 'moment';
 import Countdown from '../Countdown/Countdown';
 import './Header.css';
 
 class Header extends Component {
   render() {
+    const { date, loading, details } = this.props;
     return (
       <div className='Header'>
         <div className='header-overlay'>
@@ -19,7 +21,8 @@ class Header extends Component {
                 land
               </div>
             </div>
-            <Countdown date={this.props.date} loading={this.props.loading}/>
+            <h3 id='header-sub'>{moment(details.date).format('MMM D, YYYY').toUpperCase()} || WHISTLER, B.C.</h3>
+            <Countdown date={date} loading={loading}/>
           </div>
         </div>
       </div>

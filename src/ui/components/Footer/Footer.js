@@ -6,7 +6,7 @@ class Footer extends Component {
   render() {
     return (
       <div className='Footer'>
-        <p id='footer'>&copy;{moment().format('YYYY')} Trong & Sheena</p>
+        <p id='footer'>&copy;{moment().format('YYYY')} Sheena & Trong</p>
       </div>
     );
   }

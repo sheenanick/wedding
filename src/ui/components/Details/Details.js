@@ -4,13 +4,12 @@ import './Details.css';
 
 class Details extends Component {
   render() {
-    const { title, date, startTime, endTime, address } = this.props.details;
+    const { title, startTime, endTime, address } = this.props.details;
     return (
       <div className='Details' style={this.props.style}>
         <div className='content'>
           <h2>{title}</h2>
           <div className='time'>
-            <h3 className='accent'>{moment(date).format('dddd, MMM D, YYYY').toUpperCase()}</h3>
             <h3 className='accent'>{startTime} - {endTime}</h3>
           </div>
           <div className='address'>

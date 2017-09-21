@@ -14,7 +14,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Header date={this.props.date} loading={this.props.loading}/>
+        <Header date={this.props.date} loading={this.props.loading} details={WEDDING_INFO.ceremony}/>
         <div className='home-content'>
           <Details id='ceremony'
             details={WEDDING_INFO.ceremony}/>

@@ -1,8 +1,8 @@
 .Header {
   height: 100vh;
-  background-image: url("../../../img/path.jpg");
+  background-image: url("../../../img/main.jpg");
   background-size: cover;
-  background-position: 50% 65%;
+  background-position: 30% 10%;
   color: #ffffff;
   position: relative; }
 
@@ -22,20 +22,29 @@
 .title-container {
   width: 100%;
   max-width: 630px;
-  margin: 84px 16px; }
+  margin: 84px 16px 0 16px; }
 
 .header-title {
   font-size: 80px;
   line-height: 72px; }
 
+#header-sub {
+  font-size: 14px;
+  padding: 24px 0;
+  font-weight: 600; }
+
 @media only screen and (min-width: 460px) {
   .header-title {
     font-size: 89px;
-    letter-spacing: 5px; } }
+    letter-spacing: 5px; }
+  #header-sub {
+    font-size: 24px; } }
 
 @media only screen and (min-width: 660px) {
   .header-title {
-    font-size: 62px; }
+    font-size: 68px; }
   .title-container {
     display: flex;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  #header-sub {
+    font-size: 28px; } }
