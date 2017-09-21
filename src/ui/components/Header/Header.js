@@ -21,7 +21,7 @@ class Header extends Component {
                 Trong
               </div>
             </div>
-            <h3 id='header-sub'>{moment(details.date).format('MMM D, YYYY').toUpperCase()} || WHISTLER, B.C. || CANADA</h3>
+            <h3 id='header-sub'>{moment(details.date).format('MMM D, YYYY').toUpperCase()} / WHISTLER, B.C. / CANADA</h3>
             <Countdown date={date} loading={loading}/>
           </div>
         </div>
