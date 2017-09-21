@@ -2,7 +2,7 @@
   height: 100vh;
   background-image: url("../../../img/main.jpg");
   background-size: cover;
-  background-position: 30% 10%;
+  background-position: 28% 10%;
   color: #ffffff;
   position: relative; }
 
@@ -29,22 +29,27 @@
   line-height: 72px; }
 
 #header-sub {
-  font-size: 14px;
+  font-size: 18px;
   padding: 24px 0;
-  font-weight: 600; }
+  font-weight: 300;
+  margin: 16px;
+  word-spacing: 4px; }
 
 @media only screen and (min-width: 460px) {
   .header-title {
     font-size: 89px;
-    letter-spacing: 5px; }
-  #header-sub {
-    font-size: 24px; } }
+    letter-spacing: 5px; } }
 
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 520px) {
+  #header-sub {
+    font-size: 20px; } }
+
+@media only screen and (min-width: 768px) {
   .header-title {
-    font-size: 68px; }
+    font-size: 78px;
+    font-weight: 600; }
   .title-container {
     display: flex;
     justify-content: space-around; }
   #header-sub {
-    font-size: 28px; } }
+    font-size: 22px; } }

@@ -30,7 +30,7 @@
   width: 14px;
   height: 100%; }
 
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 768px) {
   #mobile-menu {
     display: none; }
   .navbar {
