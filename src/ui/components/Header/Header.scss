@@ -2,9 +2,9 @@
 
 .Header {
   height: 100vh;
-  background-image: url("../../../img/path.jpg");
+  background-image: url("../../../img/main.jpg");
   background-size: cover;
-  background-position: 50% 65%;
+  background-position: 30% 10%;
   color: $white;
   position: relative;
 }
@@ -27,7 +27,7 @@
 .title-container {
   width: 100%;
   max-width: $app-max-width;
-  margin: $navbar-height*1.5 $app-padding;
+  margin: $navbar-height*1.5 $app-padding 0 $app-padding;
 }
 
 .header-title {
@@ -35,15 +35,23 @@
   line-height: 72px;
 }
 
+#header-sub {
+  font-size: 14px;
+  padding: $app-padding*1.5;
+}
+
 @media only screen and (min-width: $break-point) {
   .header-title {
     font-size: 89px;
+  }
+  #header-sub {
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: $second-break-point) {
   .header-title {
-    font-size: 82px;
+    font-size: 88px;
   }
   .title-container {
     display: flex;
