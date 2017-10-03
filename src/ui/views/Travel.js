@@ -38,11 +38,23 @@ class Travel extends Component {
             <p><em>*3 night minimum stay required*</em></p>
           </div>
           <div className='section lodging'>
-            <a id='nita' href='http://www.nitalakelodge.com/'><p className='accent'>NITA LAKE LODGE</p></a>
+            <a href='http://www.nitalakelodge.com/' id='nita'>
+              <p className='accent'>NITA LAKE LODGE</p>
+            </a>
             <p>2131 Lake Placid Road</p>
             <p>Whistler, B.C. V0N 1B2</p>
-            <p>< a href='tel:1-888-755-6482'><img className='address-icon' src={phone} />1-888-755-6482</a></p>
-            <p><a href='mailto:info@nitalakelodge.com' target='_top'><img className='address-icon' src={mail} />info@nitalakelodge.com</a></p>
+            <a href='tel:1-888-755-6482'>
+              <p>
+                <img className='address-icon' src={phone} alt='phone icon'/>
+                1-888-755-6482
+              </p>
+            </a>
+            <a href='mailto:info@nitalakelodge.com' target='_top'>
+              <p>
+                <img className='address-icon' src={mail} alt='email icon'/>
+                info@nitalakelodge.com
+              </p>
+            </a>
           </div>
         </div>
         <SectionHeader img={doPic} title='WHAT TO DO'/>
