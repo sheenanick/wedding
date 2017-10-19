@@ -22,6 +22,7 @@ class Rsvp extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleReset = this.handleReset.bind(this);
   }
 
   handleChange(event) {
@@ -67,6 +68,20 @@ class Rsvp extends Component {
     }
   }
 
+  handleReset() {
+    this.setState({
+      email: '',
+      firstName: '',
+      lastName: '',
+      attending: 'true',
+      food: '',
+      message: '',
+      submitted: false,
+      emailError: false,
+      nameError: false,
+    });
+  }
+
   validateEmail(email) {
     const re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
     return !re.test(email);
@@ -80,7 +95,10 @@ class Rsvp extends Component {
         <div className='content center'>
           {
             submitted ?
-            <h3 className='section'>Thank you for your RSVP!</h3>
+            <div>
+              <h3 className='section'>Thank you for your RSVP!</h3>
+              <button className='black-button' type='button' onClick={this.handleReset}>RESET</button>
+            </div>
             :
             <div id='formSection'>
               <h4>KINDLY RESPOND BY DEC 15, 2017</h4>
