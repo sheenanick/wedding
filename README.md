@@ -6,7 +6,7 @@
 
 ## Description
 
-This is a multi-page web application created with React and Redux, and styled with Sass. It features a countdown component on the home page, and also has a RSVP form which is hooked up to Firebase. It can be viewed on Heroku [here](https://winter-wondoland.herokuapp.com/).
+This is a web application created using React, Redux and React Router, and styled with Sass. The application features a countdown component on the home page, and also has a RSVP form which is hooked up to Firebase. It can be viewed on Heroku [here](https://winter-wondoland.herokuapp.com/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
