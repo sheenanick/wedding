@@ -88,7 +88,7 @@ class Rsvp extends Component {
   }
 
   render() {
-    const { submitted, emailError, email, nameError, firstName, lastName, attending, food, message  } = this.state;
+    const { submitted, emailError, email, nameError, firstName, lastName, message, attending, food  } = this.state;
     return (
       <div className='Rsvp'>
         <SectionHeader img={rsvpPic} title='RSVP'/>
