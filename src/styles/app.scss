@@ -23,11 +23,9 @@
     cursor: pointer;
   }
 }
-
 .disable-scroll {
   overflow: hidden;
 }
-
 .app-content {
   width: 100%;
   position: absolute;
@@ -35,28 +33,22 @@
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
-
 .slide-content {
   left: $menu-width;
 }
-
 .center-vertical {
   display: flex;
   align-items: center;
 }
-
 .accent {
   color: $accent;
 }
-
 .cursive {
   font-family: 'Parisienne', cursive;
 }
-
 .icon {
   margin: $app-padding;
 }
-
 .Menu, .navbar, #mobile-menu {
   a {
     text-decoration: none;
@@ -68,36 +60,30 @@
     color: $black;
   }
 }
-
 .menu-icon {
   width: 20px;
   height: 20px;
 }
-
 .inactive {
   p:hover {
     opacity: 0.5;
   }
   opacity: 0.5;
 }
-
 .active {
   p, h4 {
     color: $black;
   }
 }
-
 .title {
   font-size: $font-size-title;
   font-weight: 300;
   margin: 36px 0;
 }
-
 .subtitle {
   font-size: $font-size-subtitle;
   margin: 0;
 }
-
 .section {
   padding: $app-padding 0;
   display: flex;
@@ -105,16 +91,13 @@
   align-items: center;
   justify-content: center;
 }
-
 .content {
   max-width: $app-max-width;
   padding: $section-padding $app-padding;
 }
-
 .button {
   background-color: $white;
 }
-
 .black-button {
   height: $button-height;
   width: 132px;
@@ -124,22 +107,34 @@
   border-color: $black;
   margin: 32px 0 16px 0;
 }
-
 .black-button:hover {
   background-color: $black;
   color: $white;
 }
-
 .center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .center-vertical {
   display: flex;
   align-items: center;
+}
+.snowflake {
+  top: -60px;
+  z-index: 1000;
+  position: absolute;
+  animation: snow linear infinite;
+}
+
+@keyframes snow {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100vh;
+  }
 }
 
 @media only screen and (min-width: $break-point) {
