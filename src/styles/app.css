@@ -109,6 +109,18 @@
   display: flex;
   align-items: center; }
 
+.snowflake {
+  top: -60px;
+  z-index: 1000;
+  position: absolute;
+  animation: snow linear infinite; }
+
+@keyframes snow {
+  0% {
+    top: 0; }
+  100% {
+    top: 100vh; } }
+
 @media only screen and (min-width: 460px) {
   .content {
     min-height: 75vh; }
