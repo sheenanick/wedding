@@ -31,7 +31,7 @@ class App extends Component {
   renderSnow = () => {
     const positions = [];
     // determine size of positions array based on window width
-    const values = window.innerWidth / 30;
+    const values = window.innerWidth / 15;
     // add random position values from 1 to 97 %
     for (var i = 0; i < values; i++) {
       positions[i] = Math.floor(Math.random() * 97 + 1);
@@ -41,11 +41,11 @@ class App extends Component {
       positions.map((position, index) => {
         const style = {
           left: `${position}%`,
-          animationDuration: `${Math.floor(Math.random() * 20 + 10)}s`,
-          animationDelay: `${Math.floor(Math.random() * 4)}s`
+          animationDuration: `${Math.floor(Math.random() * 35 + 20)}s`,
+          animationDelay: `${Math.floor(Math.random() * 30)}s`
         }
         return(
-          <img className='snowflake' src={require(`../../img/icons/snowflake${Math.floor(Math.random() * 3 + 1)}.png`)} alt='snowflake' style={style} key={index} />
+          <img className='snowflake' src={require(`../../img/icons/snowflake${Math.floor(Math.random() * 4 + 1)}.png`)} alt='snowflake' style={style} key={index} />
         );
       })
     );
