@@ -42,13 +42,13 @@
 .icon {
   margin: 16px; }
 
-.Menu a, .navbar a, #mobile-menu a {
+.Menu a, .navbar a, .mobile-nav a {
   text-decoration: none; }
 
-.Menu a:visited, .navbar a:visited, #mobile-menu a:visited {
+.Menu a:visited, .navbar a:visited, .mobile-nav a:visited {
   color: #000000; }
 
-.Menu a:link, .navbar a:link, #mobile-menu a:link {
+.Menu a:link, .navbar a:link, .mobile-nav a:link {
   color: #000000; }
 
 .menu-icon {
@@ -108,18 +108,6 @@
 .center-vertical {
   display: flex;
   align-items: center; }
-
-.snowflake {
-  top: -60px;
-  z-index: 1000;
-  position: absolute;
-  animation: snow linear infinite; }
-
-@keyframes snow {
-  0% {
-    top: 0; }
-  100% {
-    top: 100vh; } }
 
 @media only screen and (min-width: 460px) {
   .content {

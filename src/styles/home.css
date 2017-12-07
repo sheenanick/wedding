@@ -10,10 +10,22 @@
   justify-content: center;
   align-items: center; }
 
+.snowflake {
+  top: -60px;
+  z-index: 1000;
+  position: absolute;
+  animation: snow linear infinite; }
+
 #welcome-message {
   padding: 10% 0;
   max-width: 630px;
   font-size: 26px; }
+
+@keyframes snow {
+  0% {
+    top: 0; }
+  100% {
+    top: 100vh; } }
 
 @media only screen and (min-width: 760px) {
   #welcome-message {

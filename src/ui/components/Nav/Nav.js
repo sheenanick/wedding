@@ -33,7 +33,7 @@ export default class Nav extends Component {
     const { toggleMenu, toggleAudio, play } = this.props;
     return (
       <div className='Nav'>
-        <div id='mobile-menu'>
+        <div className='mobile-nav'>
           <div className='icon center-vertical'>
             <img className='menu-icon'
               src={menuIcon}
@@ -64,6 +64,7 @@ export default class Nav extends Component {
             />
           </div>
         </div>
+        <div className='nav-divider' />
       </div>
     );
   }

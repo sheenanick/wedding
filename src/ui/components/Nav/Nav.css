@@ -21,17 +21,18 @@
   .navbar-items a, .navbar-items img {
     margin: 0 32px; }
 
-#mobile-menu {
+.nav-divider {
+  background: #CDA066;
+  height: 2px; }
+
+.mobile-nav {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-#heart {
-  width: 14px;
-  height: 100%; }
-
 @media only screen and (min-width: 660px) {
-  #mobile-menu {
+  .mobile-nav {
     display: none; }
   .navbar {
     display: flex; } }
