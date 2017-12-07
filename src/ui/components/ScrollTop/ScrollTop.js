@@ -4,8 +4,9 @@ import './ScrollTop.css';
 
 class ScrollTop extends Component {
   scrollToTop() {
-    window.scrollTo(0, 0);
+    window.scrollTo({'behavior': 'smooth', 'top': 'top'});
   }
+  
   render() {
     return (
       <div className='ScrollTop'>
