@@ -17,11 +17,9 @@
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
-
 .show-menu {
   left: 0;
 }
-
 .menu-items {
   width: 100%;
   display: flex;
@@ -31,17 +29,14 @@
     margin: $app-padding*1.5 0;
   }
 }
-
 .menu-item {
   display: flex;
   align-items: center;
 }
-
 .divider {
   background-color: $gray;
   height: 1px;
 }
-
 #close-icon {
   padding: 2px;
   width: 20px;

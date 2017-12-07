@@ -13,12 +13,10 @@
     cursor: pointer;
   }
 }
-
 .navbar {
   height: 100%;
   display: none;
 }
-
 .navbar-items {
   width: 100%;
   display: flex;
@@ -28,13 +26,11 @@
     margin: 0 32px;
   }
 }
-
 #mobile-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 #heart {
   width: 14px;
   height: 100%;
