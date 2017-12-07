@@ -3,7 +3,7 @@
 .Nav {
   width: 100%;
   height: $navbar-height;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   background-color: $white;
   p {
