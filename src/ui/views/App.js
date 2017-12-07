@@ -28,52 +28,24 @@ class App extends Component {
     this.props.toggleAudio();
   }
 
-  renderSnow = () => {
-    const positions = [];
-    // determine size of positions array based on window width
-    const values = window.innerWidth / 15;
-    // add random position values from 1 to 97 %
-    for (var i = 0; i < values; i++) {
-      positions[i] = Math.floor(Math.random() * 97 + 1);
-    }
-    return (
-      //render a snowflake at every position with random animation and image
-      positions.map((position, index) => {
-        const style = {
-          left: `${position}%`,
-          animationDuration: `${Math.floor(Math.random() * 35 + 20)}s`,
-          animationDelay: `${Math.floor(Math.random() * 30)}s`
-        }
-        return(
-          <img className='snowflake' src={require(`../../img/icons/snowflake${Math.floor(Math.random() * 4 + 1)}.png`)} alt='snowflake' style={style} key={index} />
-        );
-      })
-    );
-  }
-
   render() {
     const { showMenu, play, location, children } = this.props;
     return (
       <div className={`App ${showMenu ? 'disable-scroll' : ''}`}>
         <audio id='bgm' src={LoveSong} autoPlay muted={!play} loop />
-        <div>
-          <Menu
+        <Menu
+          location={location}
+          showMenu={showMenu}
+          toggleMenu={this.toggle}/>
+        <div className={`app-content ${showMenu ? 'slide-content' : ''}`}>
+          <Nav
             location={location}
-            showMenu={showMenu}
-            toggleMenu={this.toggle}/>
-          <div
-            className={`app-content ${showMenu ? 'slide-content' : ''}`}>
-            {this.renderSnow()}
-            <Nav
-              location={location}
-              play={play}
-              toggleMenu={this.toggle}
-              toggleAudio={this.toggleAudio}
-            />
-            <div onClick={showMenu ? this.toggle : null}>
-              {children}
-              <Footer />
-            </div>
+            play={play}
+            toggleMenu={this.toggle}
+            toggleAudio={this.toggleAudio} />
+          <div onClick={showMenu ? this.toggle : null}>
+            {children}
+            <Footer />
           </div>
         </div>
       </div>

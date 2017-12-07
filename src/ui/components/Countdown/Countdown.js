@@ -1,44 +1,46 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import Spinner from '../Spinner/Spinner';
 import './Countdown.css';
 
 class Countdown extends Component {
   render() {
+    const { loading, date } = this.props;
     return (
       <div className='Countdown'>
         <div className='column'>
           {
-            this.props.loading ?
+            loading ?
             <Spinner />
             :
-            <p className='number'>{this.props.date.days}</p>
+            <p className='number'>{date.days}</p>
           }
           <p className='label'>days</p>
         </div>
         <div className='column'>
           {
-            this.props.loading ?
+            loading ?
             <Spinner />
             :
-            <p className='number'>{this.props.date.hours}</p>
+            <p className='number'>{date.hours}</p>
           }
           <p className='label'>hours</p>
         </div>
         <div className='column'>
           {
-            this.props.loading ?
+            loading ?
             <Spinner />
             :
-            <p className='number'>{this.props.date.minutes}</p>
+            <p className='number'>{date.minutes}</p>
           }
           <p className='label'>minutes</p>
         </div>
         <div className='column'>
           {
-            this.props.loading ?
+            loading ?
             <Spinner />
             :
-            <p className='number'>{this.props.date.seconds}</p>
+            <p className='number'>{date.seconds}</p>
           }
           <p className='label'>seconds</p>
         </div>
@@ -47,4 +49,11 @@ class Countdown extends Component {
   }
 }
 
-export default Countdown;
+const mapStateToProps = (state) => {
+  return {
+    date: state.countdownState.date,
+    loading: state.countdownState.loading,
+  }
+}
+
+export default connect(mapStateToProps)(Countdown);
