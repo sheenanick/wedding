@@ -7,47 +7,39 @@ $input-height: 42px;
 label{
   font-size: $font-size-label;
 }
-
 input, textarea {
   box-sizing: border-box;
 }
-
 .Rsvp {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
 .form {
   width: 100%;
   max-width: $app-max-width;
   padding: $app-padding 0;
   text-align: left;
 }
-
 .form-item {
   width: 100%;
   padding: 18px 0;
 }
-
 .form-box {
   background-color: #FAFAFA;
   border-style: solid;
   border-color: #cccccc;
   border-width: thin;
 }
-
 .error-box {
   @extend .form-box;
   border-color: red;
 }
-
 .errorMessage {
   font-size: $font-size-label;
   color: red;
   margin: 4px 0;
 }
-
 .input {
   width: 100%;
   height: $input-height;
@@ -55,17 +47,14 @@ input, textarea {
   padding: $input-padding;
   font-size: $font-size-label;
 }
-
 .name-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-
 .name-field {
   width: 49%;
 }
-
 .name {
   width: 100%;
   height: $input-height;
@@ -73,11 +62,9 @@ input, textarea {
   padding: $input-padding;
   font-size: $font-size-label;
 }
-
 .radio label {
   margin-right: 12px;
 }
-
 .text-area {
   height: 100px;
   width: 100%;
@@ -85,12 +72,10 @@ input, textarea {
   padding: $input-padding;
   font-size: $font-size-label;
 }
-
 .button-container {
   display: flex;
   justify-content: center;
 }
-
 #formSection {
   width: 100%;
   position: relative;

@@ -5,16 +5,13 @@
   flex-direction: column;
   align-items: center;
 }
-
 .section-subtitle {
   margin: 0 0 $app-padding 0;
 }
-
 .accommodations {
   font-size: 18px;
   margin: 0 $app-padding;
 }
-
 .lodging p {
   margin: 3px;
   a {
@@ -27,48 +24,39 @@
     color: $black;
   }
 }
-
 .address-icon {
   width: 16px;
   margin: 0 6px 0 0;
 }
-
 .activities-content {
   padding: $section-padding $app-padding;
   h3 {
     margin: 0 0 $app-padding 0;
   }
 }
-
 .activities {
   max-width: 1150px;
 }
-
 .activities-column {
   padding: $app-padding;
 }
-
 #car {
   width: 54px;
   height: 54px;
   margin: 14px;
 }
-
 #plane {
   width: 42px;
   height: 42px;
   margin: 20px;
 }
-
 #nita {
   text-decoration: none;
   font-weight: 600;
 }
-
 #options {
   margin-bottom: $app-padding * 2;
 }
-
 #activities-subtitle {
   max-width: $app-max-width;
 }
