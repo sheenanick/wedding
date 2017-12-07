@@ -6,13 +6,13 @@ class ScrollTop extends Component {
   scrollToTop() {
     window.scrollTo({'behavior': 'smooth', 'top': 'top'});
   }
-  
+
   render() {
     return (
       <div className='ScrollTop'>
         <button className='button top-button' onClick={() => this.scrollToTop()}>
           <img id='arrow' src={up} alt='up arrow'/>
-          <p id='top'>TOP</p>
+          <p className='bold'>TOP</p>
         </button>
       </div>
     );

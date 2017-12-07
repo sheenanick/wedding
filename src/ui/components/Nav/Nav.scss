@@ -3,7 +3,7 @@
 .Nav {
   width: 100%;
   height: $navbar-height;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   background-color: $white;
   p {
@@ -27,7 +27,7 @@
   }
 }
 .nav-divider {
-  background: $accent;
+  background: $gray;
   height: 2px;
 }
 .mobile-nav {
