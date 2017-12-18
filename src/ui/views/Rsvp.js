@@ -15,7 +15,7 @@ class Rsvp extends Component {
       attending: 'true',
       food: '',
       message: '',
-      submitted: false,
+      submitted: true,
       emailError: false,
       nameError: false,
     };
@@ -95,9 +95,9 @@ class Rsvp extends Component {
         <div className='content center'>
           {
             submitted ?
-            <div>
-              <h3 className='section'>Thank you for your RSVP!</h3>
-              <button className='black-button' type='button' onClick={this.handleReset}>RESET</button>
+            <div className='section'>
+              <h3>Thank you for your RSVP!</h3>
+              <h3>We are so excited to celebrate with all of you!! :)</h3>
             </div>
             :
             <div id='formSection'>
