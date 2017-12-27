@@ -16,7 +16,9 @@
   top: -60px;
   z-index: 1000;
   position: absolute;
-  animation: snow linear infinite;
+  -webkit-animation: snow linear infinite, rotate linear infinite; /* Safari 4.0 - 8.0 */
+  animation: snow linear infinite, rotate linear infinite;
+  transform: rotate();
 }
 #welcome-message {
   padding: 10% 0;
@@ -30,6 +32,32 @@
   }
   100% {
     top: 100vh;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes snow {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100vh;
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
