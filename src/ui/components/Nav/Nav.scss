@@ -26,15 +26,15 @@
     margin: 0 32px;
   }
 }
-.nav-divider {
-  background: $gray;
-  height: 2px;
-}
 .mobile-nav {
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.nav-divider {
+  background: $gray;
+  height: 2px;
 }
 
 @media only screen and (min-width: $second-break-point) {

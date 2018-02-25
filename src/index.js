@@ -10,12 +10,12 @@ import * as firebase from 'firebase';
 import './index.css';
 
 const config = {
-  apiKey: "AIzaSyBYoZ5RrEsZVY_LqzWPkg-XZfxdsrlLhk0",
-  authDomain: "wondoland-ff841.firebaseapp.com",
-  databaseURL: "https://wondoland-ff841.firebaseio.com",
-  projectId: "wondoland-ff841",
-  storageBucket: "wondoland-ff841.appspot.com",
-  messagingSenderId: "31262030174"
+  apiKey: "AIzaSyCdR5ueh6h6GoszbaJBk1iwY4caFsKjqbY",
+  authDomain: "rsvp-c7982.firebaseapp.com",
+  databaseURL: "https://rsvp-c7982.firebaseio.com",
+  projectId: "rsvp-c7982",
+  storageBucket: "rsvp-c7982.appspot.com",
+  messagingSenderId: "386937487109"
 };
 
 firebase.initializeApp(config);

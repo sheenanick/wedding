@@ -34,7 +34,7 @@
   align-items: center; }
 
 .accent {
-  color: #CDA066; }
+  color: #b87333; }
 
 .cursive {
   font-family: 'Parisienne', cursive; }
@@ -108,9 +108,6 @@
 .center-vertical {
   display: flex;
   align-items: center; }
-
-.bold {
-  font-weight: 600; }
 
 @media only screen and (min-width: 460px) {
   .content {

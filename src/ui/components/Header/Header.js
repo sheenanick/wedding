@@ -12,13 +12,13 @@ class Header extends Component {
           <div className='header-content'>
             <div className='title-container'>
               <div className='header-title cursive'>
-                Sheena
+                #Winter
               </div>
               <div className='header-title cursive'>
-                &
+                WonDo
               </div>
               <div className='header-title cursive'>
-                Trong
+                land
               </div>
             </div>
             <h3 id='header-sub'>{moment(details.date).format('MMM D, YYYY').toUpperCase()} / WHISTLER, B.C. / CANADA</h3>

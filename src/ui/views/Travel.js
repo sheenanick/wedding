@@ -38,7 +38,7 @@ class Travel extends Component {
             <p><em>*3 night minimum stay required*</em></p>
           </div>
           <div className='section lodging'>
-            <a href='http://www.nitalakelodge.com/' id='nita'>
+            <a href='http://www.nitalakelodge.com/' id='nita' target='_blank' rel='noopener noreferrer'>
               <p className='accent'>NITA LAKE LODGE</p>
             </a>
             <p>2131 Lake Placid Road</p>
@@ -51,7 +51,7 @@ class Travel extends Component {
             </a>
             <a href='mailto:info@nitalakelodge.com' target='_top'>
               <p>
-                <img className='address-icon' src={mail} alt='address icon' />
+                <img className='address-icon' src={mail} alt='email icon'/>
                 info@nitalakelodge.com
               </p>
             </a>

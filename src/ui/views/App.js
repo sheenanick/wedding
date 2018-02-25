@@ -37,12 +37,14 @@ class App extends Component {
           location={location}
           showMenu={showMenu}
           toggleMenu={this.toggle}/>
-        <div className={`app-content ${showMenu ? 'slide-content' : ''}`}>
+        <div
+          className={`app-content ${showMenu ? 'slide-content' : ''}`}>
           <Nav
             location={location}
             play={play}
             toggleMenu={this.toggle}
-            toggleAudio={this.toggleAudio} />
+            toggleAudio={this.toggleAudio}
+          />
           <div onClick={showMenu ? this.toggle : null}>
             {children}
             <Footer />
