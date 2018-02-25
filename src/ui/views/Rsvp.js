@@ -15,7 +15,7 @@ class Rsvp extends Component {
       attending: 'true',
       food: '',
       message: '',
-      submitted: false,
+      submitted: true,
       emailError: false,
       nameError: false,
     };
