@@ -1,10 +1,10 @@
 export const WEDDING_INFO = {
-  "date" : "2018-12-31 16:00:00",
+  "date" : "2018-02-17 16:00:00",
   "ceremony" : {
     "title": "Ceremony & Reception",
-    "date" : "2018-12-31 16:00:00",
+    "date" : "2018-02-17 16:00:00",
     "startTime": "4:00 PM",
-    "endTime": "10:00 PM",
+    "endTime": "9:00 PM",
     "address": {
       "name": "NITA LAKE LODGE",
       "street": "2131 Lake Placid Road",
